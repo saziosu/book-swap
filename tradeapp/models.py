@@ -1,3 +1,34 @@
 from django.db import models
+from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
-# Create your models here.
+
+class BookPost(models.Model):
+    """
+    BookPost model for information on the user's book
+    """
+    title = models.CharField(max_length=50)
+    slug = models.SlugField(max_length=200, unique=True)
+    post_owner = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='book_posts'
+    )
+    book_author = models.CharField(max_length=50)
+    description = models.TextField()
+    genre = models.CharField(max_length=30)
+    # plan to change this to a form choice later
+    condition = models.CharField(max_length=10)
+    created_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
+    reserved = models.BooleanField()
+    book_image = CloudinaryField('book_image', default='placeholder')
+    owner_email = models.EmailField()
+    # will be updating this later
+    owner_phone = models.IntegerField(max_length=10)
+
+    class Meta:
+        # order the posts on when they were created
+        ordering = ['created_on']
+
+    def __str__(self):
+        # django docs say to define this, returns a string from the class
+        return self.title
