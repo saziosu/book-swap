@@ -22,12 +22,12 @@ class BookPost(models.Model):
     reserved = models.BooleanField()
     book_image = CloudinaryField('book_image', default='placeholder')
     owner_email = models.EmailField()
-    # will be updating this later
-    owner_phone = models.IntegerField(max_length=10)
+    # will be updating this later for form
+    owner_phone = models.TextField(max_length=10)
 
     class Meta:
         # order the posts on when they were created
-        ordering = ['created_on']
+        ordering = ['-created_on']
 
     def __str__(self):
         # django docs say to define this, returns a string from the class
