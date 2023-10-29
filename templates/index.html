@@ -9,7 +9,7 @@
         <div class="col-md-4">
           <div class="card mb-4">
             <!-- link to click into the detailed post -->
-            <a href="#">
+            <a href="{% url 'book_detail' book.slug %}">
               <div class="card-body">
                 <div class="image-container">
                   {% if "placeholder" in book.book_image.url %}
@@ -23,6 +23,7 @@
                 </div>
                 <h2 class="card-title">{{ book.title }}</h2>
                 <h4 class="book-author">{{ book.book_author }}</h4>
+                <span class="post-owner">{{ book.post_owner }}</span>
                 <span class="posted-since">Posted: {{ book.created_on }}</span>
               </div>
             </a>
