@@ -19,7 +19,7 @@ class BookPost(models.Model):
     condition = models.CharField(max_length=10)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
-    reserved = models.BooleanField()
+    reserved = models.BooleanField(default=False)
     book_image = CloudinaryField('book_image', default='placeholder')
     owner_email = models.EmailField()
     # will be updating this later for form

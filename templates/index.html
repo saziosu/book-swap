@@ -1,15 +1,29 @@
 {% extends "base.html" %} {% block content %}
+{% load static %}
 
 <div class="container-fluid">
   <div class="row">
     <!-- Blog Entries Column -->
     <div class="col-12 mt-3 left">
       <div class="row">
-        {% for book in object_list %}
+        {% for book in book_list %}
         <div class="col-md-4">
           <div class="card mb-4">
             <div class="card-body">
-              <h2 class="card-title">{{ book.title }}</h2>
+                <div class="image-container">
+                {% if "placeholder" in book.book_image.url %}
+                <img
+                src="{% static 'images/book-placeholder.webp' %}"
+                alt="Book Placeholder Image"
+                />
+                {% else %}
+                <img class="card-img-top" src=" {{ book.book_image.url }}" />
+                {% endif %}
+                </div>
+                <h2 class="card-title">{{ book.title }}</h2>
+                <h4 class="book-author">{{ book.book_author }}</h4>
+                <span class="posted-since">Posted: {{ book.created_on }}</span>
+
             </div>
           </div>
         </div>
