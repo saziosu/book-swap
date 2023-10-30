@@ -10,15 +10,20 @@
         alt="Book Placeholder Image"
       />
       {% else %}
-      <img class="card-img-top" src=" {{ book.book_image.url }}" />
+      <img class="card-img-top" src="{{ book.book_image.url }}" />
       {% endif %}
     </div>
   </div>
   <div class="col-sm-8">
     <h2>{{ book.title }}</h2>
     <h3>{{ book.author }}</h3>
-    <h5>{{ book.post_owner }}: {{ book.created_on }}</h5>
+    <h5>{{ book.post_owner }} | {{ book.created_on }}</h5>
     <p class="book-text">{{ book.description | safe}}</p>
+    <!-- This will be only viewed by logged in users in future -->
+    <div class="contact-details">
+        <span class="email">Email: {{ book.owner_email }}</span>
+        <span class="phone">Tel: {{ book.owner_phone }}</span>
+    </div>
   </div>
 </div>
 </div>
