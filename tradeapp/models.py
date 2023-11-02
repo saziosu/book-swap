@@ -8,7 +8,7 @@ class BookPost(models.Model):
     """
     BookPost model for information on the user's book
     """
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=100)
     slug = models.SlugField(max_length=200, unique=True)
     post_owner = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='book_posts'
@@ -33,3 +33,8 @@ class BookPost(models.Model):
     def __str__(self):
         # django docs say to define this, returns a string from the class
         return self.title
+
+    def save(self, *args, **kwargs):
+        # method to automatically add slug from the title
+        self.slug = slugify(self.title)
+        super(BookPost, self).save(*args, **kwargs)
