@@ -8,6 +8,15 @@ class BookPost(models.Model):
     """
     BookPost model for information on the user's book
     """
+
+    COND_CHOICES = (
+        ('as_new', 'As new'),
+        ('fine', 'Fine'),
+        ('v_good', 'Very Good'),
+        ('fair', 'Fair'),
+        ('poor', 'Poor'),
+    )
+
     title = models.CharField(max_length=100)
     slug = models.SlugField(max_length=200, unique=True)
     post_owner = models.ForeignKey(
@@ -17,7 +26,7 @@ class BookPost(models.Model):
     description = models.TextField()
     genre = models.CharField(max_length=30)
     # plan to change this to a form choice later
-    condition = models.CharField(max_length=10)
+    condition = models.CharField(max_length=10, choices=COND_CHOICES)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     reserved = models.BooleanField(default=False)
