@@ -24,6 +24,10 @@
                 <h2 class="card-title">{{ book.title }}</h2>
                 <h4 class="book-author">{{ book.book_author }}</h4>
                 <span class="posted">{{ book.post_owner }} | {{ book.created_on }}</span>
+                {% if book.reserved == True %}
+                <br>
+                <span class="reserved"><strong>This book has been reserved</strong></span>
+                {% endif %}
               </div>
             </a>
           </div>

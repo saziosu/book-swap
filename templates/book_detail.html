@@ -15,25 +15,28 @@
       </div>
     </div>
     <div class="col-sm-8">
-      <h2>{{ book.title }}</h2>
-      <h3>{{ book.author }}</h3>
-      <h5>{{ book.post_owner }} | {{ book.created_on }}</h5>
-      <p class="book-text">{{ book.description | safe}}</p>
-      <!-- The user can only view the contact details of the owner -->
-      <!-- if they are logged in/authenticated -->
-      {% if user.is_authenticated %}
-      <div class="contact-details">
-        <span class="email">Email: {{ book.owner_email }}</span>
-        <span class="phone">Tel: {{ book.owner_phone }}</span>
-      </div>
-      {% else %}
-      <div class="contact-details">
-        <span class="contact-auth">
-          To view {{ book.post_owner }}'s contact details please
-          <a href="{% url 'account_signup' %}">Signup</a> and/or
-          <a href="{% url 'account_login' %}">Login</a>
-        </span>
-      </div>
+        <h2>{{ book.title }}</h2>
+        <h3>{{ book.author }}</h3>
+        <h5>{{ book.post_owner }} | {{ book.created_on }}</h5>
+        <p class="book-text">{{ book.description | safe}}</p>
+        <!-- The user can only view the contact details of the owner -->
+        <!-- if they are logged in/authenticated -->
+        <!-- If the book has been reserved, contact details are not available -->
+        {% if book.reserved == True %}
+            <span class="reserved"><strong>This book has been reserved</strong></span>
+        {% elif user.is_authenticated %}
+            <div class="contact-details">
+                <span class="email">Email: {{ book.owner_email }}</span>
+                <span class="phone">Tel: {{ book.owner_phone }}</span>
+            </div>
+        {% else %}
+            <div class="contact-details">
+                <span class="contact-auth">
+                To view {{ book.post_owner }}'s contact details please
+                <a href="{% url 'account_signup' %}">Signup</a> and/or
+                <a href="{% url 'account_login' %}">Login</a>
+                </span>
+            </div>
       {% endif %}
     </div>
   </div>
