@@ -25,7 +25,6 @@ class BookPost(models.Model):
     book_author = models.CharField(max_length=50)
     description = models.TextField()
     genre = models.CharField(max_length=30)
-    # plan to change this to a form choice later
     condition = models.CharField(max_length=10, choices=COND_CHOICES)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
