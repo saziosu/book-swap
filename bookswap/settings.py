@@ -53,14 +53,20 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'crispy_forms',
     'django_summernote',
     'tradeapp',
 ]
 
 SITE_ID = 1
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-saziosu-book-swap-41yiun1k74.us2.codeanyapp.com',
+                        'https://book-swap-13f900a2d9c7.herokuapp.com']
+
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
