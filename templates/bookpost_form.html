@@ -7,7 +7,7 @@
     <div class="row">
         <form action="" method="post">
             {% csrf_token %}
-            {{ form }}
+            {{ form | crispy}}
             <button type="submit" class="btn btn-success">Add My Book!</button>
         </form>
     </div>
