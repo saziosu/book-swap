@@ -1,6 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.views.generic.edit import CreateView
+from crispy_forms.helper import FormHelper
+from crispy_forms.layout import Submit
+
 from .models import BookPost
 
 
@@ -19,6 +22,7 @@ class BookDetail(View):
     """
     View to display the details of the book post to the user
     """
+
     def get(self, request, slug, *arg, **kwarg):
         queryset = BookPost.objects.all()
         book = get_object_or_404(queryset, slug=slug)
@@ -30,6 +34,7 @@ class BookDetail(View):
                 "book": book
             },
         )
+
 
 class BookCreateView(CreateView):
     """
@@ -51,6 +56,8 @@ class BookCreateView(CreateView):
         'owner_phone',
     ]
 
+    form_class = None
+
     def form_valid(self, form):
         """
         method to set the owner of the post as the currently
@@ -58,3 +65,5 @@ class BookCreateView(CreateView):
         """
         form.instance.post_owner = self.request.user
         return super().form_valid(form)
+
+
