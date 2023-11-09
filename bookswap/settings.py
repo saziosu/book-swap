@@ -34,7 +34,7 @@ SECRET_KEY = 'django-insecure-hb_-w#7gl&^cv0a_4boudbk_lf1&nz^w9+!p#)-e@d)2(g6dxd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-saziosu-book-swap-41yiun1k74.us2.codeanyapp.com',
+ALLOWED_HOSTS = ['8000-saziosu-book-swap-af4savvg0b.us2.codeanyapp.com',
                  'book-swap-13f900a2d9c7.herokuapp.com']
 
 
@@ -61,7 +61,7 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-saziosu-book-swap-41yiun1k74.us2.codeanyapp.com',
+CSRF_TRUSTED_ORIGINS = ['https://8000-saziosu-book-swap-af4savvg0b.us2.codeanyapp.com',
                         'https://book-swap-13f900a2d9c7.herokuapp.com']
 
 LOGIN_REDIRECT_URL = '/'

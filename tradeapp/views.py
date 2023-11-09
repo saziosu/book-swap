@@ -1,10 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.views.generic.edit import CreateView
-from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Submit
-
 from .models import BookPost
+from .forms import BookForm
 
 
 class BookView(generic.ListView):
@@ -37,26 +35,9 @@ class BookDetail(View):
 
 
 class BookCreateView(CreateView):
-    """
-    https://docs.djangoproject.com/en/4.2/ref/class-based-views/generic-editing/#django.views.generic.edit.CreateView
-    https://www.youtube.com/watch?v=-s7e_Fy6NRU
-    View to add the form to add a new book post
-    """
     model = BookPost
-    template_name = 'bookpost_form.html'
-    fields = [
-        'title',
-        'book_author',
-        'description',
-        'genre',
-        'condition',
-        'reserved',
-        'book_image',
-        'owner_email',
-        'owner_phone',
-    ]
-
-    form_class = None
+    template_name = 'book_form.html'
+    form_class = BookForm
 
     def form_valid(self, form):
         """
@@ -65,5 +46,6 @@ class BookCreateView(CreateView):
         """
         form.instance.post_owner = self.request.user
         return super().form_valid(form)
+
 
 
