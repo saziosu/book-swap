@@ -24,6 +24,9 @@ class BookForm(forms.ModelForm):
         ]
     
     def __init__(self, *args, **kwargs):
+        """
+        https://django-crispy-forms.readthedocs.io/en/latest/layouts.html
+        """
         super(BookForm, self).__init__(*args, **kwargs)
         self.helper = FormHelper()
         self.helper.layout = Layout(

@@ -43,6 +43,7 @@ class BookCreateView(CreateView):
         """
         method to set the owner of the post as the currently
         logged in user.
+        https://www.youtube.com/watch?v=-s7e_Fy6NRU
         """
         form.instance.post_owner = self.request.user
         return super().form_valid(form)

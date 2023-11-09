@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.text import slugify
+from django.urls import reverse
 from cloudinary.models import CloudinaryField
 
 
@@ -46,3 +47,10 @@ class BookPost(models.Model):
         # method to automatically add slug from the title
         self.slug = slugify(self.title)
         super(BookPost, self).save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        """
+        https://www.youtube.com/watch?v=-s7e_Fy6NRU
+        https://ngangasn.com/what-is-get_absolute_url-in-django/
+        """
+        return reverse('book_detail', args=[str(self.slug)])
