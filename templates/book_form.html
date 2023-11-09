@@ -1,16 +1,24 @@
 {% extends 'base.html' %}
 {% block content %}
-{% load static %}
+{% load static %} 
 {% load crispy_forms_tags %}
 
 <div class="container-fluid">
-    <h1>Add Your Book</h1>
-    <div class="row">
-        <form action="" method="post">
-            {% csrf_token %}
-            {% crispy form %}
-        </form>
-    </div>
+  <h1>Add Your Book</h1>
+  <div class="row">
+    {% if user.is_authenticated %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {% crispy form %}
+    </form>
+    {% else %}
+    <p>
+      If you would like to add a Book, please
+      <a href="{% url 'account_signup' %}">Signup</a> and/or
+      <a href="{% url 'account_login' %}">Login</a>
+    </p>
+    {% endif %}
+  </div>
 </div>
 
 {% endblock content %}
