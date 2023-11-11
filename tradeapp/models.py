@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.text import slugify
 from django.urls import reverse
+from phonenumber_field.modelfields import PhoneNumberField
 from cloudinary.models import CloudinaryField
 
 
@@ -33,7 +34,7 @@ class BookPost(models.Model):
     book_image = CloudinaryField('book_image', default='placeholder')
     owner_email = models.EmailField()
     # will be updating this later for form
-    owner_phone = models.TextField(max_length=10)
+    owner_phone = PhoneNumberField(region="IE")
 
     class Meta:
         # order the posts on when they were created
