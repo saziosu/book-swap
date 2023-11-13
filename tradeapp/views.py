@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import BookPost
 from .forms import BookForm
 
@@ -36,18 +36,56 @@ class BookDetail(View):
 
 
 class BookCreateView(LoginRequiredMixin, CreateView):
+    """
+    CreateView to create a new book post, sets the
+    post_owner to the currently logged in user using the form.
+    """
     model = BookPost
     template_name = 'book_form.html'
     form_class = BookForm
 
     def form_valid(self, form):
         """
-        method to set the owner of the post as the currently
+        Method to set the owner of the post as the currently
         logged in user.
         https://www.youtube.com/watch?v=-s7e_Fy6NRU
         """
         form.instance.post_owner = self.request.user
         return super().form_valid(form)
+
+
+class BookUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """
+    UpdateView to allow the user to update their book post.
+    Only the owner of the post can edit it.
+    """
+    model = BookPost
+    template_name = 'book_form.html'
+    form_class = BookForm
+
+    def test_func(self):
+        """
+        Method to only allow the post_owner of the book post to update that post
+        https://stackoverflow.com/questions/65402719/updateview-and-preventing-users-from-editing-other-users-content
+        """
+        book = self.get_object()
+        if self.request.user == book.post_owner:
+            return True
+        return False
+
+    def form_valid(self, form):
+        """
+        Method to set the user that edited to the post_owner (post author)
+        """
+        form.instance.post_owner = self.request.user
+        return super().form_valid(form)
+
+
+
+
+
+
+
 
 
 
