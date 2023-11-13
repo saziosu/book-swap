@@ -1,39 +1,172 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# PROJECT TITLE
+Description for project
 
-Welcome,
+[image here]
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Link for the finished deployed site: LINK
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+# Table of Contents
 
-## Codeanywhere Reminders
+- [PROJECT TITLE](#project-title)
+- [Table of Contents](#table-of-contents)
+- [User Experience](#user-experience)
+  - [User Stories](#user-stories)
+  - [Planning](#planning)
+- [Design](#design)
+  - [Color Scheme](#color-scheme)
+  - [Typography](#typography)
+  - [Imagery](#imagery)
+- [Features](#features)
+  - [Current Features](#current-features)
+    - [Feature One](#feature-one)
+    - [Feature Two](#feature-two)
+    - [FEATURE THREE](#feature-three)
+    - [FEATURE FOUR](#feature-four)
+  - [Future Features](#future-features)
+  - [Accessibility](#accessibility)
+- [Technology Used](#technology-used)
+  - [Languages](#languages)
+  - [Frameworks, Libraries \& Programs](#frameworks-libraries--programs)
+- [Deployment \& Development](#deployment--development)
+  - [Forking the Repository](#forking-the-repository)
+  - [Deploy to Heroku](#deploy-to-heroku)
+- [Testing](#testing)
+- [Credits](#credits)
+  - [Code](#code)
+  - [Media](#media)
+- [Acknowledgements](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+# User Experience
 
-`python3 -m http.server`
+aim and project goals
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## User Stories
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+* First Time User
+  
+* Returning User
 
-`http_server`
+* Frequent User
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Planning
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+wireframes, flowcharts, etc.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+# Design
 
-To log into the Heroku toolbelt CLI:
+## Color Scheme
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+COLORS & IMAGES
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Typography
 
----
+Fonts were chosen from GoogleFonts
 
-Happy coding!
+* Font
+* Details
+* Here
+
+## Imagery
+
+Image sources
+
+# Features 
+
+## Current Features
+
+### Feature One
+
+FEATURE ONE
+IMAGE
+
+### Feature Two
+
+FEATURE TWO
+IMAGE
+
+### FEATURE THREE
+
+IMAGE
+FEATURE
+
+### FEATURE FOUR
+
+IMAGE
+FEATURE
+
+## Future Features
+
+* A few
+* Future
+* Features
+
+## Accessibility
+
+* Accessibility
+* Considerations
+* Here
+
+# Technology Used
+
+## Languages
+
+* List
+* Languages
+* Here
+
+## Frameworks, Libraries & Programs 
+
+* links
+* And
+* Description
+
+# Deployment & Development
+
+## Forking the Repository
+
+1. Log in or Sign up to [GitHub](https://github.com/)
+2. Navigate to https://github.com/saziosu/book-swap.
+3. Click the 'fork' button in the top right corner.
+4. Feel free to customize your repo name, this is not required.
+5. Click the Create Fork button.
+
+## Deploy to Heroku
+Heroku was used to deploy this site:
+
+1. Run pip3 freeze > requirements.txt in the console to set up the requirements.txt file. This command will create the file if it does not already exist.
+2. Commit any changes and push to GitHub.
+3. Navigate to Heroku's website and log in to the dashboard.
+4. Click on "Create new app" in the top right.
+5. Enter the "App name" and select your region, then click "Create App". 
+6. Head to the Settings tab in the new app.
+7. Go to "Config Vars" under the Settings tab.
+8. Click on "Reveals Config Vars".
+9. Add the "CLOUDINARY_URL", "DATABASE_URL", and "SECRET_KEY" values generated for the project
+10. Add "PORT" key and "8000" value to the config vars.
+11. Move to the "deploy" tab on the app, and scroll down to the deployment method section.
+12. Select "GitHub" and connect to GitHub.
+13. Search for the appropriate GitHub repo and Connect.
+14. Select "Automatic deploys" or "Manual deploys" to deploy the application.
+
+
+# Testing
+
+[TESTING.md](TESTING.md)
+
+# Credits
+
+## Code
+
+* Code
+* Credits
+* Here
+
+## Media
+
+* Media
+* Credits
+* Here
+
+# Acknowledgements
+
+* Thanks y'all!
