@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.views.generic.edit import CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import BookPost
 from .forms import BookForm
 
@@ -34,7 +35,7 @@ class BookDetail(View):
         )
 
 
-class BookCreateView(CreateView):
+class BookCreateView(LoginRequiredMixin, CreateView):
     model = BookPost
     template_name = 'book_form.html'
     form_class = BookForm
