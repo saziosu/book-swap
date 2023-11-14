@@ -33,6 +33,11 @@
                 <br>
                 <span class="reserved"><strong>This book has been reserved</strong></span>
                 {% endif %}
+                {% if book.post_owner == request.user %}
+                <div class="ud-container">
+                    <a href="{% url 'book_update' slug=book.slug %}" class="btn btn-secondary">Edit</a>
+                </div>
+                {% endif %}
               </div>
             </a>
           </div>

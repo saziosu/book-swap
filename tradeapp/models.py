@@ -12,7 +12,7 @@ class BookPost(models.Model):
     """
 
     COND_CHOICES = (
-        ('as_new', 'As new'),
+        ('as_new', 'As New'),
         ('fine', 'Fine'),
         ('v_good', 'Very Good'),
         ('fair', 'Fair'),
