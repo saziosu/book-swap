@@ -36,6 +36,7 @@
                 {% if book.post_owner == request.user %}
                 <div class="ud-container">
                     <a href="{% url 'book_update' slug=book.slug %}" class="btn btn-secondary">Edit</a>
+                    <a href="{% url 'book_delete' slug=book.slug %}" class="btn btn-danger">Delete</a>
                 </div>
                 {% endif %}
               </div>
