@@ -3,7 +3,7 @@ from django.urls import path
 from django.http import HttpResponse
 
 urlpatterns = [
-    path('', views.BookView.as_view()),
+    path('', views.BookView.as_view(), name='home'),
     path('<slug:slug>/', views.BookDetail.as_view(), name='book_detail'),
     path('add-book', views.BookCreateView.as_view(), name='book_create'),
     path('<slug:slug>/edit', views.BookUpdateView.as_view(), name='book_update'),
