@@ -1,8 +1,7 @@
 {% extends "base.html" %} {% block content %} {% load static %}
 
-
+<div class="bg-image vh-100 hero-img"></div>
 <div class="container-fluid">
-
     <div class="link-container">
         <a href="/add-book" id="add-book">Add Your Book</a>
     </div>
@@ -11,15 +10,15 @@
     <div class="col-12 mt-3 left">
       <div class="row">
         {% for book in book_list %}
-        <div class="col-md-4">
-          <div class="card mb-4">
+        <div class="col-md-3">
+          <div class="card mb-3">
             <!-- link to click into the detailed post -->
             <a href="{% url 'book_detail' book.slug %}">
               <div class="card-body">
                 <div class="image-container">
                   {% if "placeholder" in book.book_image.url %}
                   <img
-                    src="{% static 'images/book-placeholder.webp' %}"
+                    src="https://res.cloudinary.com/dygj0wxf0/image/upload/v1700072067/placeholder-image_hjgthw.jpg"
                     alt="Book Placeholder Image"
                   />
                   {% else %}
