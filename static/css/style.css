@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f1e8d6;
+    background-color: #FBE7C6;
 }
 
 
@@ -19,7 +19,7 @@ h6 {
 }
 
 .navbar {
-    background-color: #B4F8C8;
+    background-color: #A0E7E5;
     height: 17%;
 }
 
@@ -27,11 +27,21 @@ h6 {
     background-image: url('https://res.cloudinary.com/dygj0wxf0/image/upload/v1700073385/book-hero-img_vtln5e.jpg');
     background-position: center top;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
-.hero-img img {
-    display: block;
+#mission-statement {
+    font-size: 120%;
+    width: 50%;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    color: #f3e5ef;
+    background-color: rgba(69, 183, 179, 0.8);
+    text-align: center;
 }
 
 .bswap-info {
@@ -39,11 +49,12 @@ h6 {
     margin-bottom: 3%;
 }
 
-.info-container {
+#info-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 50px 0;
+
 }
 
 .card {
