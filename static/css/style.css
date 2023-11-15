@@ -8,11 +8,6 @@ body {
     background-color: #f1e8d6;
 }
 
-.navbar {
-    background-color: #B4F8C8;
-    height: 17%;
-}
-
 
 h1,
 h2,
@@ -23,15 +18,32 @@ h6 {
     font-family: 'Syne', sans-serif;
 }
 
+.navbar {
+    background-color: #B4F8C8;
+    height: 17%;
+}
+
 .hero-img {
     background-image: url('https://res.cloudinary.com/dygj0wxf0/image/upload/v1700073385/book-hero-img_vtln5e.jpg');
     background-position: center top;
     background-repeat: no-repeat;
-    margin-bottom: 3%;
+    
 }
 
 .hero-img img {
     display: block;
+}
+
+.bswap-info {
+    background: #A0E7E5;
+    margin-bottom: 3%;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
 }
 
 .card {

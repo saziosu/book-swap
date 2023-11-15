@@ -1,6 +1,23 @@
 {% extends "base.html" %} {% block content %} {% load static %}
 
-<div class="bg-image vh-100 hero-img"></div>
+<div class="bg-image vh-100 hero-img">
+    <div id="mission-statement">
+        <h1>BookSwap</h1>
+        <h2>Bringing readers together!</h2>
+    </div>
+</div>
+<div class="container-fluid vh-30 bswap-info">
+    <div class="info-container">
+    <h1>
+        What is BookSwap?
+    </h1>
+    <p>
+        BookSwap is an online community to bring readers together through swapping books.
+        <br>
+        <a href="{% url 'account_signup' %}">Sign Up</a> today to post your books and contact users you'd like to swap with!
+    </p>
+    </div>
+</div>
 <div class="container-fluid">
     <div class="link-container">
         <a href="/add-book" id="add-book">Add Your Book</a>
