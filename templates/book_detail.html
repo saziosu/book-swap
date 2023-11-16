@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %} {% load static %}
 
 <div class="container">
-  <div class="row p-5">
+  <div class="row p-5 d-flex justify-content-around">
     <div class="col-sm-4">
       <div class="image-container img-fluid">
         {% if "placeholder" in book.book_image.url %}
@@ -14,7 +14,7 @@
         {% endif %}
       </div>
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-6">
         <h2>{{ book.title }}</h2>
         <h3>{{ book.author }}</h3>
         <h5>{{ book.post_owner }} | {{ book.created_on }}</h5>
