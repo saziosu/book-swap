@@ -10,12 +10,13 @@
           alt="Book Placeholder Image"
         />
         {% else %}
-        <img class="card-img-top" src="{{ book.book_image.url }}" alt="Image for {{ book.title }}" />
+        <img class="book-image" src="{{ book.book_image.url }}" alt="Image for {{ book.title }}" />
         {% endif %}
       </div>
     </div>
     <div class="col-sm-6">
-        <h2>{{ book.title }} - {{ book.book_author }} </h2>
+        <h2>{{ book.title }}</h2>
+        <h3>{{ book.book_author }}</h3>
         <h5>{{ book.post_owner }} | {{ book.created_on }}</h5>
         <!-- Display instance to show the string value of the choice field -->
         <!-- https://docs.djangoproject.com/en/4.2/ref/models/instances/ -->
