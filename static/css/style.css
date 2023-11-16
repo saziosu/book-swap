@@ -94,3 +94,9 @@ h6 {
 #footer-text {
     color:rgb(9, 21, 2)
 }
+
+.book-image {
+    border-style: solid;
+    border-color: #FFAEBC;
+    border-width: thick;
+}

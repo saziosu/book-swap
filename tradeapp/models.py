@@ -38,6 +38,7 @@ class BookPost(models.Model):
 
     class Meta:
         # order the posts on when they were created
+        # newest posts first
         ordering = ['-created_on']
 
     def __str__(self):
