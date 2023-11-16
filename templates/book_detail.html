@@ -15,29 +15,29 @@
       </div>
     </div>
     <div class="col-sm-6">
-        <h2>{{ book.title }}</h2>
-        <h3>{{ book.author }}</h3>
+        <h2>{{ book.title }} - {{ book.book_author }} </h2>
         <h5>{{ book.post_owner }} | {{ book.created_on }}</h5>
         <!-- Display instance to show the string value of the choice field -->
         <!-- https://docs.djangoproject.com/en/4.2/ref/models/instances/ -->
-        <span class="condition">Condition: {{ book.get_condition_display }}</span>
+        <span><strong>Condition:</strong> {{ book.get_condition_display }}</span>
+        <br>
+        <span><strong>Genre:</strong> {{ book.genre }}</span>
         <p class="book-text">{{ book.description | safe}}</p>
         <!-- The user can only view the contact details of the owner -->
         <!-- if they are logged in/authenticated -->
         <!-- If the book has been reserved, contact details are not available -->
         {% if book.reserved == True %}
-            <span class="reserved"><strong>This book has been reserved</strong></span>
+        <span class="reserved"><strong>This book has been reserved</strong></span>
         {% elif user.is_authenticated %}
-            <div class="contact-details">
-                <span class="email">Email: {{ book.owner_email }}</span>
-                <span class="phone">Tel: {{ book.owner_phone }}</span>
-            </div>
+        <div class="contact-details">
+            <span class="email"><strong>Email:</strong> {{ book.owner_email }}</span>
+            <span class="phone"><strong>Tel:</strong> {{ book.owner_phone }}</span>
+        </div>
         {% else %}
             <div class="contact-details">
                 <span class="contact-auth">
                 To view {{ book.post_owner }}'s contact details please
-                <a href="{% url 'account_signup' %}">Signup</a> and/or
-                <a href="{% url 'account_login' %}">Login</a>
+                <a href="{% url 'account_signup' %}">Signup</a>/<a href="{% url 'account_login' %}">Login</a>
                 </span>
             </div>
         {% endif %}
