@@ -38,7 +38,7 @@ class BookForm(forms.ModelForm):
             Field('reserved'),
             Field('book_image'),
             Field('owner_email'),
-            Field('owner_phone'),
+            Field('owner_phone', placeholder="Defaults to Irish numbers, internation dialling codes also accepted"),
             Submit('submit', 'Add my Book!', css_class='btn btn-success'),
         )
 
