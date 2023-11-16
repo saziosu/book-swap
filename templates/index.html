@@ -39,7 +39,7 @@
                     alt="Book Placeholder Image"
                   />
                   {% else %}
-                  <img class="card-img-top" src=" {{ book.book_image.url }}" />
+                  <img class="card-img-top" src=" {{ book.book_image.url }}" alt="Image for {{ book.title }}" />
                   {% endif %}
                 </div>
                 <h2 class="card-title">{{ book.title }}</h2>
