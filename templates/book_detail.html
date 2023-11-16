@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %} {% load static %}
 
 <div class="container">
-  <div class="row">
+  <div class="row p-5">
     <div class="col-sm-4">
       <div class="image-container img-fluid">
         {% if "placeholder" in book.book_image.url %}
@@ -18,7 +18,9 @@
         <h2>{{ book.title }}</h2>
         <h3>{{ book.author }}</h3>
         <h5>{{ book.post_owner }} | {{ book.created_on }}</h5>
-        <span class="condition">Condition: {{ book.condition }}</span>
+        <!-- Display instance to show the string value of the choice field -->
+        <!-- https://docs.djangoproject.com/en/4.2/ref/models/instances/ -->
+        <span class="condition">Condition: {{ book.get_condition_display }}</span>
         <p class="book-text">{{ book.description | safe}}</p>
         <!-- The user can only view the contact details of the owner -->
         <!-- if they are logged in/authenticated -->
