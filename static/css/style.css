@@ -1,3 +1,4 @@
+/* Global styling */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Syne:wght@500;700&display=swap');
 
 * {
@@ -18,10 +19,12 @@ h6 {
     font-family: 'Syne', sans-serif;
 }
 
+/* Navbar styling */
 .navbar {
     background-color: #A0E7E5;
 }
 
+/* Hero image */
 .hero-img {
     background-image: url('https://res.cloudinary.com/dygj0wxf0/image/upload/v1700073385/book-hero-img_vtln5e.jpg');
     background-position: center top;
@@ -32,6 +35,7 @@ h6 {
     
 }
 
+/* Hero image - mission statement */
 #mission-statement {
     font-size: 120%;
     width: 50%;
@@ -43,6 +47,7 @@ h6 {
     text-align: center;
 }
 
+/* Information area */
 .bswap-info {
     background: #A0E7E5;
     margin-bottom: 3%;
@@ -56,6 +61,7 @@ h6 {
 
 }
 
+/* homepage bookpost cards */
 .card {
     border: 1px;
     background-color: #c2ccc5;
@@ -80,6 +86,7 @@ h6 {
     height: auto;
 }
 
+/* add book link style */
 #add-book {
     text-decoration: none;
     font-size: 1.5rem;
@@ -91,10 +98,12 @@ h6 {
     text-decoration: none;
 }
 
+/* footer text styling */
 #footer-text {
     color:rgb(9, 21, 2)
 }
 
+/* book detail styling */
 .book-image {
     border-style: solid;
     border-color: #FFAEBC;
