@@ -1,11 +1,13 @@
 {% extends "base.html" %} {% block content %} {% load static %}
 
+<!-- hero image and mission statement -->
 <div class="bg-image vh-100 hero-img">
     <div id="mission-statement">
         <h1>BookSwap</h1>
         <h2>Bringing readers together!</h2>
     </div>
 </div>
+<!-- section to detail the purpose of the website -->
 <section class="container-fluid vh-30 bswap-info">
     <div id="info-container">
     <h1>
@@ -14,10 +16,12 @@
     <p>
         BookSwap is an online community to bring readers together through swapping books.
         <br>
+        <!-- link to the sign up page, to encourage users to join -->
         <a href="{% url 'account_signup' %}">Sign Up</a> today to post your books and contact users you'd like to swap with!
     </p>
     </div>
 </section>
+<!-- section for the book posts -->
 <section class="container-fluid">
     <div class="link-container">
         <a href="/add-book" id="add-book">Add Your Book</a>
@@ -26,6 +30,7 @@
     <!-- Blog Entries Column -->
     <div class="col-12 mt-3 left">
       <div class="row">
+        <!-- loop through each book post -->
         {% for book in book_list %}
         <div class="col-md-3">
           <div class="card mb-3">
@@ -49,6 +54,7 @@
                 <br>
                 <span class="reserved"><strong>This book has been reserved</strong></span>
                 {% endif %}
+                <!-- if the current user is the owner of the post, they can see the edit and delete buttons -->
                 {% if book.post_owner == request.user %}
                 <div class="ud-container">
                     <a href="{% url 'book_update' slug=book.slug %}" class="btn btn-secondary">Edit</a>
