@@ -2,8 +2,10 @@
 
 <div class="container">
   <div class="row p-5 d-flex justify-content-around">
+    <!-- div housing the image -->
     <div class="col-sm-4">
       <div class="image-container img-fluid">
+        <!-- if the placeholder is used in the bookpost, load the placeholder image -->
         {% if "placeholder" in book.book_image.url %}
         <img class="book-image"
           src="https://res.cloudinary.com/dygj0wxf0/image/upload/v1700072067/placeholder-image_hjgthw.jpg"
@@ -14,6 +16,7 @@
         {% endif %}
       </div>
     </div>
+    <!-- div presenting the book's information -->
     <div class="col-sm-6">
         <h2>{{ book.title }}</h2>
         <h3>{{ book.book_author }}</h3>
@@ -29,12 +32,15 @@
         <!-- If the book has been reserved, contact details are not available -->
         {% if book.reserved == True %}
         <span class="reserved"><strong>This book has been reserved</strong></span>
+        <!-- if the user is logged in they can view the user's contact details -->
         {% elif user.is_authenticated %}
         <div class="contact-details">
             <span class="email"><strong>Email:</strong> {{ book.owner_email }}</span>
+            <br>
             <span class="phone"><strong>Tel:</strong> {{ book.owner_phone }}</span>
         </div>
         {% else %}
+        <!-- user is encouraged to log in if they are not logged in -->
             <div class="contact-details">
                 <span class="contact-auth">
                 To view {{ book.post_owner }}'s contact details please
