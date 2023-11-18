@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.utils.text import slugify
 from django.urls import reverse
 from phonenumber_field.modelfields import PhoneNumberField
+from autoslug import AutoSlugField
 from cloudinary.models import CloudinaryField
 
 
@@ -20,7 +21,7 @@ class BookPost(models.Model):
     )
 
     title = models.CharField(max_length=100)
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = AutoSlugField(populate_from='title', max_length=200, unique=True)
     post_owner = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='book_posts'
     )
@@ -44,11 +45,6 @@ class BookPost(models.Model):
     def __str__(self):
         # django docs say to define this, returns a string from the class
         return self.title
-
-    def save(self, *args, **kwargs):
-        # method to automatically add slug from the title
-        self.slug = slugify(self.title)
-        super(BookPost, self).save(*args, **kwargs)
 
     def get_absolute_url(self):
         """
