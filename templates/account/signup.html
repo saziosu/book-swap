@@ -4,6 +4,7 @@
     {% trans "Signup" %}
 {% endblock head_title %}
 {% block content %}
+<div class="mx-auto p-5">
     {% element h1 %}
         {% trans "Sign Up" %}
     {% endelement %}
@@ -30,3 +31,4 @@
     {% endelement %}
     {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
 {% endblock content %}
+</div>
