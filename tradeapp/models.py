@@ -34,7 +34,6 @@ class BookPost(models.Model):
     reserved = models.BooleanField(default=False)
     book_image = CloudinaryField('book_image', default='placeholder')
     owner_email = models.EmailField()
-    # will be updating this later for form
     owner_phone = PhoneNumberField(region="IE")
 
     class Meta:
