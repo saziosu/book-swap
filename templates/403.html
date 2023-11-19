@@ -1,11 +1,13 @@
 {% extends "base.html" %} {% block content %} {% load static %}
 
-<div class="container-fluid vh-100">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-sm-4 mx-auto">
+        <div class="col-sm-4 mx-auto py-5">
             <h2>403 Error</h2>
-            <h4>This action is forbidden!</h4>
-            <a class="home-button btn" href="{% url 'home' %}">Return to Homepage</a>
+            <h4>Oops! This action is not allowed!</h4>
+            <p>Please make sure you <a href="{% url 'account_signup' %}">Signup</a> or <a href="{% url 'account_login' %}">Login</a></p>
+            <a class="home-button btn btn-success my-3" href="{% url 'home' %}">Return to Homepage</a>
         </div>
     </div>
 </div>
+{% endblock content %}
