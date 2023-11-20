@@ -34,8 +34,15 @@
       <div class="row">
         <!-- loop through each book post -->
         {% for book in book_list %}
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3">
           <div class="card mb-3">
+            <!--
+                xs (for phones - screens less than 768px wide)
+                sm (for tablets - screens equal to or greater than 768px wide)
+                md (for small laptops - screens equal to or greater than 992px wide)
+                lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+
+            -->
             <!-- link to click into the detailed post -->
             <a href="{% url 'book_detail' book.slug %}">
               <div class="card-body">
