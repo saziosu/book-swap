@@ -64,8 +64,8 @@
                 <!-- if the current user is the owner of the post, they can see the edit and delete buttons -->
                 {% if book.post_owner == request.user %}
                 <div class="ud-container">
-                    <a href="{% url 'book_update' slug=book.slug %}" class="btn btn-secondary">Edit</a>
-                    <a href="{% url 'book_delete' slug=book.slug %}" class="btn btn-danger">Delete</a>
+                    <a href="{% url 'book_update' slug=book.slug %}" class="btn btn edit-button" aria-label="Edit button" >Edit</a>
+                    <a href="{% url 'book_delete' slug=book.slug %}" class="btn btn-danger" aria-label="Delete Button" >Delete</a>
                 </div>
                 {% endif %}
               </div>
