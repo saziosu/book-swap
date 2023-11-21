@@ -14,7 +14,7 @@ Link for the finished deployed site: https://book-swap-13f900a2d9c7.herokuapp.co
   - [Epics](#epics)
   - [User Stories](#user-stories)
   - [Labels](#labels)
-  - [Planning](#planning)
+  - [Wireframes](#wireframes)
 - [Design](#design)
   - [Color Scheme](#color-scheme)
   - [Typography](#typography)
@@ -37,6 +37,7 @@ Link for the finished deployed site: https://book-swap-13f900a2d9c7.herokuapp.co
 - [Credits](#credits)
   - [Code](#code)
   - [Media](#media)
+  - [Content](#content)
 - [Acknowledgements](#acknowledgements)
 
 # Agile Planning
@@ -92,29 +93,38 @@ The labels are priorised as follows:
 | bug           | Something isn't working                                                              |
 
 These result in the following stats:
-![https://res.cloudinary.com/dygj0wxf0/image/upload/v1700580861/Screenshot_2023-11-21_at_15.33.51_kfcvlu.png](label stats image)
 
-## Planning
+![label stats image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700580861/Screenshot_2023-11-21_at_15.33.51_kfcvlu.png)
 
-wireframes, flowcharts, etc.
+## Wireframes
+
+The following wireframes were used to plan the look of the site:
+![wireframes image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700581232/Screenshot_2023-11-21_at_15.40.18_b3dhdj.png)
 
 # Design
 
 ## Color Scheme
 
-COLORS & IMAGES
+For the colorscheme, [this palette from Canva](https://www.canva.com/colors/color-palettes/pastel-dreams/) was used for inspiriation:
+![canva image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700581475/Screenshot_2023-11-21_at_15.44.28_slnhyv.png)
+
+These were adjusted to ensure there was enough contrast on the site.
+The final colors used:
+
+IMAGE HERE
 
 ## Typography
 
 Fonts were chosen from GoogleFonts
 
-* Font
-* Details
-* Here
+* [Syne](https://fonts.google.com/specimen/Syne) was used for header fonts
+* [Inter](https://fonts.google.com/specimen/Inter) was used for all other fonts
+* San-serif was used as the fallback font
 
 ## Imagery
 
-Image sources
+The hero image was sourced from [Pexels](https://www.pexels.com/photo/books-on-shelves-2177482/)
+The images from the books
 
 # Features 
 
@@ -212,6 +222,10 @@ Heroku was used to deploy this site:
 * Media
 * Credits
 * Here
+
+## Content
+
+* Content details
 
 # Acknowledgements
 
