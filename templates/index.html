@@ -18,15 +18,19 @@
     <p>
         BookSwap is an online community to bring readers together through swapping books.
         <br>
+        You can post the books you have available for swap, and leave your contact details for users to contact you.
+        <br>
+        {% if user.is_anonymous %}
         <!-- link to the sign up page, to encourage users to join -->
-        <a href="{% url 'account_signup' %}">Sign Up</a> today to post your books and contact users you'd like to swap with!
+        <a class="btn btn-sm info-signin" href="{% url 'account_login' %}">Sign In</a> today to post your books and contact users you'd like to swap with!
+        {% endif %}
     </p>
     </div>
 </section>
 <!-- section for the book posts -->
 <section class="container-fluid" id="books">
     <div class="link-container">
-        <a href="/add-book" id="add-book">Add Your Book</a>
+        <a href="{% url 'book_create' %}" id="add-book">Add Your Book</a>
     </div>
   <div class="row">
     <!-- Blog Entries Column -->

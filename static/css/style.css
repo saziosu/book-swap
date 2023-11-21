@@ -61,6 +61,10 @@ h6 {
 
 }
 
+.info-signin {
+    background-color: #FFAEBC;
+}
+
 /* homepage bookpost cards */
 .card {
     border: 1px;
