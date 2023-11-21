@@ -1,0 +1,140 @@
+/* Global styling */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Syne:wght@500;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #FBE7C6;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Syne', sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #A0E7E5;
+}
+
+/* Hero image */
+.hero-img {
+    background-image: url('https://res.cloudinary.com/dygj0wxf0/image/upload/v1700073385/book-hero-img_vtln5e.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Hero image - mission statement */
+#mission-statement {
+    font-size: 120%;
+    width: 50%;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    color: #f3e5ef;
+    background-color: rgba(69, 183, 179, 0.8);
+    text-align: center;
+}
+
+/* Information area */
+.bswap-info {
+    background: #A0E7E5;
+    margin-bottom: 3%;
+}
+
+#info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+
+}
+
+/* homepage bookpost cards */
+.card {
+    border: 1px;
+    background-color: #c2ccc5;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 5px #9b5e78;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* add book link style */
+#add-book {
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #FFAEBC;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 50px;
+    color: rgb(9, 21, 2);
+    text-decoration: none;
+}
+
+/* footer positioning */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* footer text styling */
+#footer-text {
+    color:rgb(9, 21, 2)
+}
+
+/* book detail styling */
+.book-image {
+    border-style: solid;
+    border-color: #FFAEBC;
+    border-width: thick;
+}
+
+.book-text {
+    margin: 4% 0;
+    padding: 5%;
+    background-color: rgba(180, 248, 200, 0.6);
+    border-radius: 5%;
+}
+
+/* media query to improve responsivity on screens 600px and below */ 
+@media screen and (max-width: 600px) {
+    #info-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* media query to improve responsivity on screens 400px and below */
+@media screen and (max-width: 400px) {
+    #mission-statement {
+        width: 100%;
+    }
+}
