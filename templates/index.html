@@ -45,16 +45,16 @@
               <div class="card-body">
                 <div class="image-container">
                   {% if "placeholder" in book.book_image.url %}
-                  <img
+                  <img class="img-thumbnail"
                     src="https://res.cloudinary.com/dygj0wxf0/image/upload/v1700072067/placeholder-image_hjgthw.jpg"
-                    alt="Book Placeholder Image"
+                    alt="Book Placeholder Image" sizes="(min-width: 400px) 10vw, 30vw"
                   />
                   {% else %}
-                  <img class="card-img-top" src=" {{ book.book_image.url }}" alt="Image for {{ book.title }}" />
+                  <img class="card-img-top img-thumbnail" src=" {{ book.book_image.url }}" alt="Image for {{ book.title }}" />
                   {% endif %}
                 </div>
                 <h2 class="card-title">{{ book.title }}</h2>
-                <h4 class="book-author">{{ book.book_author }}</h4>
+                <h3 class="book-author">{{ book.book_author }}</h3>
                 <span class="posted">{{ book.post_owner }} | {{ book.created_on }}</span>
                 {% if book.reserved == True %}
                 <br>
