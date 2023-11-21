@@ -166,15 +166,26 @@ FEATURE
 
 ## Languages
 
-* List
-* Languages
-* Here
+* HTML
+* CSS
+* BootStrap
+* Python
+* Django
+* JavaScript
 
 ## Frameworks, Libraries & Programs 
 
-* links
-* And
-* Description
+* AutoSlug
+* Cloudinary & dj3-cloudinary-storage
+* CrispyForms & crispy-bootstrap4
+* django-allauth
+* django-phonenumber-field & phonenumbers
+* gunicorn
+* psycopg2
+* requests-oauthlib
+* sqlparse
+* urllib3
+* whitenoise
 
 # Deployment & Development
 
