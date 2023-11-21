@@ -1,16 +1,19 @@
-# PROJECT TITLE
-Description for project
+# BookSwap
+BookSwap is a project to connect readers through swapping books.
 
 [image here]
 
-Link for the finished deployed site: LINK
+Link for the finished deployed site: https://book-swap-13f900a2d9c7.herokuapp.com/
 
 # Table of Contents
 
-- [PROJECT TITLE](#project-title)
+- [BookSwap](#bookswap)
 - [Table of Contents](#table-of-contents)
-- [User Experience](#user-experience)
+- [Agile Planning](#agile-planning)
+  - [Site Goals](#site-goals)
+  - [Epics](#epics)
   - [User Stories](#user-stories)
+  - [Labels](#labels)
   - [Planning](#planning)
 - [Design](#design)
   - [Color Scheme](#color-scheme)
@@ -36,17 +39,60 @@ Link for the finished deployed site: LINK
   - [Media](#media)
 - [Acknowledgements](#acknowledgements)
 
-# User Experience
+# Agile Planning
 
-aim and project goals
+## Site Goals
+The site's goals are to help connect readers and allow them to posts books they are willing to swap.
+Readers are able to see available books, and see the book's information such as genre and the book's condition to help them decide if they want to contact the book's owner and organise a swap.
+
+## Epics
+There are three Epics within this project:
+
+**EPIC: Account Management**
+This epic focuses on the account management portion of the project.
+It involves creating accounts, signing in and logging out.
+
+**EPIC: Remote Book Swap**
+This epic focuses on the features that allow the users to use the book swap functionality so that they can trade their books.
+The user must be logged in/authenticated to generate the post.
+The user should be logged in/authenticated to view the other user's contact details.
+If they are not logged in when they view the post, the contact details should be replaced with a request to log in to view them.
+
+**EPIC: Design & Experience**
+This epic focuses on the overall styling of the website.
+The overall design and colour scheme of the website should be attractive and fitting with the theme of the project.
+Toast messages should give feedback to the user.
+Custom error pages should redirect the user back to the appropriate area of the site.
 
 ## User Stories
+Majority of User stories are linked to Epics. Labels are applied for prioritisation, such as `must have`, `should have` and `could have`.
 
-* First Time User
-  
-* Returning User
+* As a Developer, I can deploy the website early so that I can avoid any technical issues or stress later in the project
 
-* Frequent User
+| **Epic**            | **User Story**                                                                                      | **Priority Label** |
+|---------------------|-----------------------------------------------------------------------------------------------------|--------------------|
+| Account Management  | As a User, I can create an account so that I can access features for authenticated users            | must have          |
+| Account Management  | As a User, I can reset my password so that I can access my account if I forget my password          | could have         |
+| Account Management  | As a User, I can update my contact details so that I can allow users to contact me for a swap       | could have         |
+| Remote Book Swap    | As a User, I can create a book post so that I can other users can decide if they would like to swap | must have          |
+| Remote Book Swap    | As a User, I can edit my book post so that I can update my information                              | must have          |
+| Remote Book Swap    | As a User, I can view other book posts so that I can decide which book I would like to swap with    | must have          |
+| Remote Book Swap    | As a User, I can edelete my book post so that I can manage my posts                                 | must have          |
+| Design & Experience | As a User, I can feedback messages so that I can see feedback from the actions I have completed     | could have         |
+| Design & Experience | As a User, I can view a clean and attractive website so that I can have a positive experience       | should have        |
+
+
+## Labels
+The labels are priorised as follows:
+
+| **must have** | **This feature/issue is required for the project to function**                       |
+|---------------|--------------------------------------------------------------------------------------|
+| should have   | Important to implement but will not crash the project without but still key features |
+| could have    | would like to have, but not essential to the project                                 |
+| bug           | Something isn't working                                                              |
+
+These result in the following stats:
+![https://res.cloudinary.com/dygj0wxf0/image/upload/v1700580861/Screenshot_2023-11-21_at_15.33.51_kfcvlu.png](label stats image)
 
 ## Planning
 
