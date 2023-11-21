@@ -46,14 +46,14 @@
             <div class="contact-details">
                 <span class="contact-auth">
                 To view {{ book.post_owner }}'s contact details please
-                <a href="{% url 'account_signup' %}">Signup</a>/<a href="{% url 'account_login' %}">Login</a>
+                <a href="{% url 'account_signup' %}" aria-label="Signup link">Signup</a>/<a href="{% url 'account_login' %}" aria-label="Login Link">Login</a>
                 </span>
             </div>
         {% endif %}
         {% if book.post_owner == request.user %}
         <div class="ud-container">
-        <a href="{% url 'book_update' slug=book.slug %}" class="btn btn-secondary btn-sm">Edit</a>
-        <a href="{% url 'book_delete' slug=book.slug %}" class="btn btn-danger btn-sm">Delete</a>
+        <a href="{% url 'book_update' slug=book.slug %}" class="btn btn-secondary edit-button" aria-label="Edit Button for {{ book.title }}">Edit</a>
+        <a href="{% url 'book_delete' slug=book.slug %}" class="btn btn-danger btn-sm" aria-label="Delete button for {{ book.title }}">Delete</a>
         </div>
         {% endif %}
     </div>
