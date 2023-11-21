@@ -61,6 +61,9 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'book_create' %}">Add Your Book</a>
+            </li>
             {% else %}
             <li class="nav-item">
               <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
@@ -69,7 +72,15 @@
               <a class="nav-link" href="{% url 'account_login' %}">Login</a>
             </li>
             {% endif %}
+            <li class="nav-item">
+                <a class="nav-link" href="#books">Current Books</a>
+            </li>
           </ul>
+          {% if user.is_authenticated %}
+          <span class="navbar-text">
+            Currently logged in as <strong>{{ user.username }}</strong>
+          </span>
+          {% endif %}
         </div>
       </div>
     </nav>
@@ -84,6 +95,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                
             </div>
         </div>
     </div>
