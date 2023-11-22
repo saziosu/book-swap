@@ -65,7 +65,8 @@ class BookUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def test_func(self):
         """
-        Method to only allow the post_owner of the book post to update that post
+        Method to only allow the post_owner of the
+        book post to update that post
         https://stackoverflow.com/questions/65402719/updateview-and-preventing-users-from-editing-other-users-content
         """
         book = self.get_object()
@@ -90,25 +91,14 @@ class BookDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         """
-        Method to only allow the post_owner of the book post to delete that post
+        Method to only allow the post_owner of the
+        book post to delete that post
         https://stackoverflow.com/questions/65402719/updateview-and-preventing-users-from-editing-other-users-content
         """
         book = self.get_object()
         if self.request.user == book.post_owner:
             return True
         return False
-    
+
     success_url = "/"
     template_name = 'book_delete.html'
-
-
-
-
-
-
-
-
-
-
-
-
