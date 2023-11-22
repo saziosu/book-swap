@@ -86,6 +86,7 @@
     </nav>
 
     <!-- toast messages -->
+    <!-- Used the django blog to help add these messages -->
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -131,6 +132,8 @@
     <!-- Copyright -->
 </footer>
 <script>
+    // Toast messages disappear after 3 seconds
+    // Used the django blog project for help adding this
     setTimeout(function () {
         let messages = document.getElementById("toast");
         let alert = new bootstrap.Alert(messages);
