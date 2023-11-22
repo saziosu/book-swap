@@ -1,7 +1,7 @@
 # BookSwap
 BookSwap is a project to connect readers through swapping books.
 
-[image here]
+![Am I responsive image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700683184/amiresponsive_vzoufb.png)
 
 Link for the finished deployed site: https://book-swap-13f900a2d9c7.herokuapp.com/
 
@@ -109,9 +109,9 @@ For the colorscheme, [this palette from Canva](https://www.canva.com/colors/colo
 ![canva image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700581475/Screenshot_2023-11-21_at_15.44.28_slnhyv.png)
 
 These were adjusted to ensure there was enough contrast on the site.
-The final colors used:
+The final colors used (made with [coolers](https://coolors.co/)):
 
-IMAGE HERE
+![Coolers image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700683581/coolers_n4umdo.png)
 
 ## Typography
 
@@ -124,7 +124,7 @@ Fonts were chosen from GoogleFonts
 ## Imagery
 
 The hero image was sourced from [Pexels](https://www.pexels.com/photo/books-on-shelves-2177482/)
-The images from the books
+The placeholder image was also sourced from [Pexels](https://www.pexels.com/photo/small-flowers-on-a-book-3696663/)
 
 # Features 
 
