@@ -225,9 +225,28 @@ Heroku was used to deploy this site:
 
 ## Code
 
-* Code
-* Credits
-* Here
+* [Code Institute](https://github.com/Code-Institute-Solutions/Django3blog) -  I relied heavily on this resource to help set up the following:
+  * Templates
+  * Models.py
+  * Urls.py
+  * Messages - including timing them out with JavaScript
+  * Views.py
+  * Djang-allauth
+  * Cloudinary Fields
+  * Setting up django files (settings, admin etc)
+* [Corey Schafer](https://www.youtube.com/watch?v=-s7e_Fy6NRU) - I used this resource to help set up the views for:
+  * Creating posts
+  * Editing posts
+  * Deleting posts
+* [ngangasn.com](https://ngangasn.com/what-is-get_absolute_url-in-django/) - I used this resource to help me set the absolute url on my model, to redirect the user to the book detail page after creating a post.
+* [StackOverflow](https://stackoverflow.com/questions/65402719/updateview-and-preventing-users-from-editing-other-users-content) - I used this resource to help only allow the owner of the post to edit and/or delete it
+* [CrispyForms Documentation](https://django-crispy-forms.readthedocs.io/en/latest/layouts.html) - I used this to help set up the crispforms helper, to help the submit button
+* [StackOverflow](https://stackoverflow.com/questions/24822509/success-message-in-deleteview-not-shown) - used this resource to help set up the messages on the deleteview
+* [StackOverflow](https://stackoverflow.com/questions/24914637/show-a-successful-message-with-class-based-views) - I used this resource to help set up the messages on the other generic class based views
+* [StackOverflow](https://stackoverflow.com/questions/75495403/django-returns-templatedoesnotexist-when-using-crispy-forms) - I used this resource to help with an error with crispyforms package
+* [Django Documentation](https://docs.djangoproject.com/en/4.2/ref/models/instances/#django.db.models.Model.get_FOO_display) - I used this resource to help resolve an issue with showing the model's choice data on the front end
+* [AutoSlug](https://django-autoslug.readthedocs.io/en/latest/) - I used this resource to help set up unique slugs from the book title
+
 
 ## Media
 

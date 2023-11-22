@@ -109,6 +109,7 @@ class BookDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     def get_success_url(self):
         """
         On success, report success message for deletion
+        https://stackoverflow.com/questions/24822509/success-message-in-deleteview-not-shown
         """
         messages.success(self.request, "Your Book has been deleted!")
         return reverse('home')
