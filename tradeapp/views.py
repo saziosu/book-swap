@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib import messages
 from .models import BookPost
 from .forms import BookForm
 
@@ -49,7 +50,10 @@ class BookCreateView(LoginRequiredMixin, CreateView):
         Method to set the owner of the post as the currently
         logged in user.
         https://www.youtube.com/watch?v=-s7e_Fy6NRU
+        Also added messages:
+        https://docs.djangoproject.com/en/4.2/ref/contrib/messages/
         """
+        messages.success(self.request, 'Successfully added your Book!')
         form.instance.post_owner = self.request.user
         return super().form_valid(form)
 
@@ -78,6 +82,7 @@ class BookUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         """
         Method to set the user that edited to the post_owner (post author)
         """
+        messages.success(self.request, 'Successfully updated your Book!')
         form.instance.post_owner = self.request.user
         return super().form_valid(form)
 
