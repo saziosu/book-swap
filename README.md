@@ -123,6 +123,7 @@ Fonts were chosen from GoogleFonts
 
 ## Imagery
 
+**All images were chosen to match the theme of the site**
 The hero image was sourced from [Pexels](https://www.pexels.com/photo/books-on-shelves-2177482/)
 The placeholder image was also sourced from [Pexels](https://www.pexels.com/photo/small-flowers-on-a-book-3696663/)
 The example Book images were sourced from [Goodreads](https://www.goodreads.com/)
@@ -230,13 +231,17 @@ Heroku was used to deploy this site:
 
 ## Media
 
-* Media
-* Credits
-* Here
+* [Canva Logo Generator](https://www.canva.com/create/logos/) was used to create the favicon and site logo
+  * [favicon.io](https://favicon.io/) was used to convert the logo into a favicon icon file
+* The hero image on the homepage was sourced from [Pexels](https://www.pexels.com/photo/books-on-shelves-2177482/)
+* The book post placeholder image was also sourced from [Pexels](https://www.pexels.com/photo/small-flowers-on-a-book-3696663/)
+* The sample Book post images were sourced from [Goodreads](https://www.goodreads.com/)
+
 
 ## Content
 
-* Content details
+* The information from the books were also sourced from [Goodreads](https://www.goodreads.com/)
+  * I used this source to get the title, author, blurb/description and genre.
 
 # Acknowledgements
 
