@@ -47,6 +47,8 @@ class BookPost(models.Model):
 
     def get_absolute_url(self):
         """
+        Get absolute url to redirect the user to the page
+        for the book they just posted.
         https://www.youtube.com/watch?v=-s7e_Fy6NRU
         https://ngangasn.com/what-is-get_absolute_url-in-django/
         """

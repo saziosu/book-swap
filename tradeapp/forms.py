@@ -43,4 +43,3 @@ class BookForm(forms.ModelForm):
             Field('owner_phone', placeholder="Defaults to Irish numbers"),
             Submit('submit', 'Add my Book!', css_class='btn btn-success my-4'),
         )
-
