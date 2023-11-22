@@ -12,19 +12,20 @@
 <!-- section to detail the purpose of the website -->
 <section class="container-fluid bswap-info">
     <div id="info-container">
-    <h1>
-        What is BookSwap?
-    </h1>
-    <p>
-        BookSwap is an online community to bring readers together through swapping books.
-        <br>
-        You can post the books you have available for swap, and leave your contact details for users to contact you.
-        <br>
-        {% if user.is_anonymous %}
-        <!-- link to the sign up page, to encourage users to join -->
-        <a class="btn btn-sm info-signin" href="{% url 'account_login' %}" aria-labelledby="Sign In link">Sign In</a> today to post your books and contact users you'd like to swap with!
-        {% endif %}
-    </p>
+        <h1>
+            What is BookSwap?
+        </h1>
+        <p>
+            BookSwap is an online community to bring readers together through swapping books.
+            <br>
+            You can post the books you have available for swap, and leave your contact details for users to contact you.
+            <br>
+            {% if user.is_anonymous %}
+            <!-- link to the sign up page, to encourage users to join -->
+            <a class="btn btn-sm info-signin" href="{% url 'account_login' %}" aria-labelledby="Sign In link">Sign
+                In</a> today to post your books and contact users you'd like to swap with!
+            {% endif %}
+        </p>
     </div>
 </section>
 <!-- section for the book posts -->
@@ -32,49 +33,50 @@
     <div class="link-container">
         <a href="{% url 'book_create' %}" id="add-book" aria-labelledby="Add Book link">Add Your Book</a>
     </div>
-  <div class="row">
-    <!-- Blog Entries Column -->
-    <div class="col-12 mt-3 left">
-      <div class="row">
-        <!-- loop through each book post -->
-        {% for book in book_list %}
-        <div class="col-md-4 col-lg-3">
-          <div class="card mb-3">
-            <!-- link to click into the detailed post -->
-            <a href="{% url 'book_detail' book.slug %}" aria-label="Click for {{ book.title }} details">
-              <div class="card-body">
-                <div class="image-container">
-                  {% if "placeholder" in book.book_image.url %}
-                  <img class="img-thumbnail"
-                    src="https://res.cloudinary.com/dygj0wxf0/image/upload/v1700072067/placeholder-image_hjgthw.jpg"
-                    alt="Book Placeholder Image" style="width: 100%; height: 100%;"
-                  />
-                  {% else %}
-                <img class="card-img-top img-thumbnail" src=" {{ book.book_image.url }}" alt="Image for {{ book.title }}"
-                    style="width: 100%; height: 100%;" />
-                  {% endif %}
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                <!-- loop through each book post -->
+                {% for book in book_list %}
+                <div class="col-md-4 col-lg-3">
+                    <div class="card mb-3">
+                        <!-- link to click into the detailed post -->
+                        <a href="{% url 'book_detail' book.slug %}" aria-label="Click for {{ book.title }} details">
+                            <div class="card-body">
+                                <div class="image-container">
+                                    {% if "placeholder" in book.book_image.url %}
+                                    <img class="img-thumbnail"
+                                        src="https://res.cloudinary.com/dygj0wxf0/image/upload/v1700072067/placeholder-image_hjgthw.jpg"
+                                        alt="Book Placeholder Image" style="width: 100%; height: 100%;" />
+                                    {% else %}
+                                    <img class="card-img-top img-thumbnail" src=" {{ book.book_image.url }}"
+                                        alt="Image for {{ book.title }}" style="width: 100%; height: 100%;" />
+                                    {% endif %}
+                                </div>
+                                <h2 class="card-title">{{ book.title }}</h2>
+                                <h3 class="book-author">{{ book.book_author }}</h3>
+                                <span class="posted">{{ book.post_owner }} | {{ book.created_on }}</span>
+                                {% if book.reserved == True %}
+                                <br>
+                                <span class="reserved"><strong>This book has been reserved</strong></span>
+                                {% endif %}
+                                <!-- if the current user is the owner of the post, they can see the edit and delete buttons -->
+                                {% if book.post_owner == request.user %}
+                                <div class="ud-container">
+                                    <a href="{% url 'book_update' slug=book.slug %}" class="btn btn edit-button"
+                                        aria-labelledby="Edit button">Edit</a>
+                                    <a href="{% url 'book_delete' slug=book.slug %}" class="btn btn-danger"
+                                        aria-labelledby="Delete Button">Delete</a>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <h2 class="card-title">{{ book.title }}</h2>
-                <h3 class="book-author">{{ book.book_author }}</h3>
-                <span class="posted">{{ book.post_owner }} | {{ book.created_on }}</span>
-                {% if book.reserved == True %}
-                <br>
-                <span class="reserved"><strong>This book has been reserved</strong></span>
-                {% endif %}
-                <!-- if the current user is the owner of the post, they can see the edit and delete buttons -->
-                {% if book.post_owner == request.user %}
-                <div class="ud-container">
-                    <a href="{% url 'book_update' slug=book.slug %}" class="btn btn edit-button" aria-labelledby="Edit button" >Edit</a>
-                    <a href="{% url 'book_delete' slug=book.slug %}" class="btn btn-danger" aria-labelledby="Delete Button" >Delete</a>
-                </div>
-                {% endif %}
-              </div>
-            </a>
-          </div>
+                {% endfor %}
+            </div>
         </div>
-        {% endfor %}
-      </div>
     </div>
-  </div>
 </section>
 {% endblock %}
