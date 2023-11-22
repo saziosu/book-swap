@@ -125,6 +125,7 @@ Fonts were chosen from GoogleFonts
 
 The hero image was sourced from [Pexels](https://www.pexels.com/photo/books-on-shelves-2177482/)
 The placeholder image was also sourced from [Pexels](https://www.pexels.com/photo/small-flowers-on-a-book-3696663/)
+The example Book images were sourced from [Goodreads](https://www.goodreads.com/)
 
 # Features 
 
@@ -158,9 +159,8 @@ FEATURE
 
 ## Accessibility
 
-* Accessibility
-* Considerations
-* Here
+* Semantic HTML was used throughout the site as much as possible to ensure accessibility.
+* Links to other pages and external websites in the footer were given `aria-label` attributes to ensure accessibility.
 
 # Technology Used
 
@@ -168,13 +168,13 @@ FEATURE
 
 * HTML
 * CSS
-* BootStrap
 * Python
-* Django
 * JavaScript
 
 ## Frameworks, Libraries & Programs 
 
+* BootStrap
+* Django
 * AutoSlug
 * Cloudinary & dj3-cloudinary-storage
 * CrispyForms & crispy-bootstrap4
