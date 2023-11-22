@@ -24,7 +24,7 @@ class BookForm(forms.ModelForm):
             'owner_email',
             'owner_phone',
         ]
-    
+
     def __init__(self, *args, **kwargs):
         """
         https://django-crispy-forms.readthedocs.io/en/latest/layouts.html
@@ -40,8 +40,7 @@ class BookForm(forms.ModelForm):
             Field('reserved'),
             Field('book_image'),
             Field('owner_email'),
-            Field('owner_phone', placeholder="Defaults to Irish numbers, international dialling codes also accepted"),
+            Field('owner_phone', placeholder="Defaults to Irish numbers"),
             Submit('submit', 'Add my Book!', css_class='btn btn-success my-4'),
         )
-
 
