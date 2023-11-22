@@ -24,7 +24,7 @@
             <h4>{{ book.post_owner }} | {{ book.created_on }}</h4>
             <!-- Display instance to show the string value of the choice field -->
             <!-- https://docs.djangoproject.com/en/4.2/ref/models/instances/ -->
-            <span><strong>Condition:</strong> {{ book.get_condition_display }}</span
+            <span><strong>Condition:</strong> {{ book.get_condition_display }}</span>
             <br>
             <span><strong>Genre:</strong> {{ book.genre }}</span>
             <p class="book-text">{{ book.description | safe}}</p>
