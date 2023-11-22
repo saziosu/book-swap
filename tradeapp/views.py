@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib import messages
+from django.urls import reverse
 from .models import BookPost
 from .forms import BookForm
 
@@ -105,5 +106,10 @@ class BookDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             return True
         return False
 
-    success_url = "/"
+    def get_success_url(self):
+        """
+        On success, report success message for deletion
+        """
+        messages.success(self.request, "Your Book has been deleted!")
+        return reverse('home')
     template_name = 'book_delete.html'
