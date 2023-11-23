@@ -60,7 +60,8 @@
                     </li>
                     {% endif %}
                     <li class="nav-item">
-                        <a class="nav-link" aria-label="Navbar current books link" href="#books">Current Books</a>
+                        <!-- https://stackoverflow.com/questions/25940811/how-to-add-anchor-to-django-url-in-template -->
+                        <a class="nav-link" aria-label="Navbar current books link" href="{% url 'home' %}#books">Current Books</a>
                     </li>
                 </ul>
                 {% if user.is_authenticated %}
