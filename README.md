@@ -246,6 +246,7 @@ Heroku was used to deploy this site:
   * Setting up django files (settings, admin etc)
 * [Code Institute](https://github.com/ckz8780/ci-fsf-hello-django/) - I used this hello-django project for help with setting boolean field
 * [Django Documentation](https://docs.djangoproject.com/en/4.2/ref/models/fields/#choices) - I used this resource to help set up the choice field in my model in models.py
+* [Django Documentation](https://docs.djangoproject.com/en/4.2/ref/views/#error-views) -  I used this to help understand the error pages for django
 * [Corey Schafer](https://www.youtube.com/watch?v=-s7e_Fy6NRU) - I used this resource to help set up the views for:
   * Creating posts
   * Editing posts
@@ -277,4 +278,8 @@ Heroku was used to deploy this site:
 
 # Acknowledgements
 
-* Thanks y'all!
+* Graeme, my mentor, for all the help and advice throughout the project.
+* Course Facilitator Alan for all the helpful tips and tricks, and great guidance throughout the project.
+* My cohort classmates for feedback during our standups.
+
+[Top](#bookswap)
