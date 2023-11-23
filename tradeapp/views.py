@@ -53,6 +53,7 @@ class BookCreateView(LoginRequiredMixin, CreateView):
         https://www.youtube.com/watch?v=-s7e_Fy6NRU
         Also added messages:
         https://docs.djangoproject.com/en/4.2/ref/contrib/messages/
+        https://stackoverflow.com/questions/28723266/django-display-message-after-post-form-submit
         """
         messages.success(self.request, 'Successfully added your Book!')
         form.instance.post_owner = self.request.user
