@@ -164,9 +164,11 @@ FEATURE
 
 ## Future Features
 
-* A few
-* Future
-* Features
+* Password reset, currently the project does not require an email address. In future when I have furthered my skills I would like to add a password reset
+* Update contact details, in future I would like to add a profile to the site so that users can track all the books they have posted. It would be nice if the contact details on the post pulled from the posting user's profile and they can easily update this from their profile.
+* Books API - if I had more time and furthered my skills I would love to integrate this project with an API such as [Google Books](https://developers.google.com/books) or [Open Library](https://openlibrary.org/developers/api). This would allow the user to search for book and choose the correct one, rather than entering all of the book's information manually - this would also prevent human error such as entering the wrong details etc.
+* Search - it would be a nice feature to add a search bar that allows you to search for your favourite author or genre, for example.
+* Image optimisation - it would be great to add a method to auto upgrade uploaded to images to next gen format like webp. If I had more time and/or money I would love to implement this via django natively or via a CDN feature like CloudFlare's Polish feature.
 
 ## Accessibility
 
