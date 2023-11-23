@@ -23,6 +23,7 @@ Link for the finished deployed site: https://book-swap-13f900a2d9c7.herokuapp.co
   - [Current Features](#current-features)
     - [Navbar](#navbar)
     - [Hero Section](#hero-section)
+    - [Info Section](#info-section)
     - [Sign Up](#sign-up)
     - [Login](#login)
     - [Logout](#logout)
@@ -31,6 +32,7 @@ Link for the finished deployed site: https://book-swap-13f900a2d9c7.herokuapp.co
     - [Edit Book](#edit-book)
     - [Delete Book](#delete-book)
     - [Messaging](#messaging)
+    - [Footer](#footer)
   - [Future Features](#future-features)
   - [Accessibility](#accessibility)
 - [Technology Used](#technology-used)
@@ -158,6 +160,10 @@ FEATURE
 FEATURE
 ![hero image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764505/Screenshot_2023-11-23_at_18.34.58_eeprk6.png)
 
+### Info Section
+
+![info section](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764523/Screenshot_2023-11-23_at_18.35.18_zvupei.png)
+
 ### Sign Up
 
 ![signup](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765390/Screenshot_2023-11-23_at_18.49.44_xuxft2.png)
@@ -193,6 +199,10 @@ FEATURE
 ### Messaging
 
 ![messaging](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765691/Screenshot_2023-11-23_at_18.54.40_q8l9fv.png)
+
+### Footer
+
+![footer](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765412/Screenshot_2023-11-23_at_18.50.06_a8io79.png)
 
 ## Future Features
 
