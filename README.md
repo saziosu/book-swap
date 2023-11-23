@@ -9,11 +9,11 @@ Link for the finished deployed site: https://book-swap-13f900a2d9c7.herokuapp.co
 
 - [BookSwap](#bookswap)
 - [Table of Contents](#table-of-contents)
-- [Agile Planning](#agile-planning)
-  - [Site Goals](#site-goals)
+- [Site Goals](#site-goals)
+- [Agile Methodology](#agile-methodology)
+  - [Labels](#labels)
   - [Epics](#epics)
   - [User Stories](#user-stories)
-  - [Labels](#labels)
   - [Wireframes](#wireframes)
 - [Design](#design)
   - [Color Scheme](#color-scheme)
@@ -40,11 +40,33 @@ Link for the finished deployed site: https://book-swap-13f900a2d9c7.herokuapp.co
   - [Content](#content)
 - [Acknowledgements](#acknowledgements)
 
-# Agile Planning
 
-## Site Goals
-The site's goals are to help connect readers and allow them to posts books they are willing to swap.
+# Site Goals
+The site's goals are to help connect readers and allow them to posts books they are willing to swap with each other.
 Readers are able to see available books, and see the book's information such as genre and the book's condition to help them decide if they want to contact the book's owner and organise a swap.
+This connects readers and is also a sustainable way of reading.
+> Each year consumers waste more than 16,000 truckloads of books which have not been read once. [source](https://wordsrated.com/impact-of-book-publishing-on-environment/)
+BookSwap has the potential to help make a positive impact on our environment by preventing wastage of unwanted books.
+
+# Agile Methodology
+This project was developed using agile methodologies by utilising Epics and User stories.
+User storied were assigned to Epics. 
+The Epics & User Stories were prioritised by labels. `must have`, `should have`, `could have`.
+A kanban board in GitHub was used to track these, with a `not started`, `in progress`, `done`, `NINTH(not important, nice to have)` and `bug` sections.
+When a user story is completed, it gets moved to the done section.
+The full kanban board can be viewed here: https://github.com/users/saziosu/projects/4/views/1
+
+## Labels
+The labels are priorised as follows:
+
+| must have | This feature/issue is required for the project to function                      |
+| should have   | Important to implement but will not crash the project without but still key features |
+| could have    | would like to have, but not essential to the project                                 |
+
+These result in the following stats:
+
+![label stats image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700580861/Screenshot_2023-11-21_at_15.33.51_kfcvlu.png)
+This can be viewed directly here: https://github.com/users/saziosu/projects/4/insights/1
 
 ## Epics
 There are three Epics within this project:
@@ -82,19 +104,6 @@ Majority of User stories are linked to Epics. Labels are applied for prioritisat
 | Design & Experience | As a User, I can feedback messages so that I can see feedback from the actions I have completed     | could have         |
 | Design & Experience | As a User, I can view a clean and attractive website so that I can have a positive experience       | should have        |
 
-
-## Labels
-The labels are priorised as follows:
-
-| **must have** | **This feature/issue is required for the project to function**                       |
-|---------------|--------------------------------------------------------------------------------------|
-| should have   | Important to implement but will not crash the project without but still key features |
-| could have    | would like to have, but not essential to the project                                 |
-| bug           | Something isn't working                                                              |
-
-These result in the following stats:
-
-![label stats image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700580861/Screenshot_2023-11-21_at_15.33.51_kfcvlu.png)
 
 ## Wireframes
 
