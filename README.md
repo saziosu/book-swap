@@ -99,20 +99,18 @@ Custom error pages should redirect the user back to the appropriate area of the 
 ## User Stories
 Majority of User stories are linked to Epics. Labels are applied for prioritisation, such as `must have`, `should have` and `could have`.
 
-* As a Developer, I can deploy the website early so that I can avoid any technical issues or stress later in the project
-
-| **Epic**            | **User Story**                                                                                      | **Priority Label** |
-|---------------------|-----------------------------------------------------------------------------------------------------|--------------------|
-| Account Management  | As a User, I can create an account so that I can access features for authenticated users            | must have          |
-| Account Management  | As a User, I can reset my password so that I can access my account if I forget my password          | could have         |
-| Account Management  | As a User, I can update my contact details so that I can allow users to contact me for a swap       | could have         |
-| Remote Book Swap    | As a User, I can create a book post so that I can other users can decide if they would like to swap | must have          |
-| Remote Book Swap    | As a User, I can edit my book post so that I can update my information                              | must have          |
-| Remote Book Swap    | As a User, I can view other book posts so that I can decide which book I would like to swap with    | must have          |
-| Remote Book Swap    | As a User, I can edelete my book post so that I can manage my posts                                 | must have          |
-| Design & Experience | As a User, I can feedback messages so that I can see feedback from the actions I have completed     | could have         |
-| Design & Experience | As a User, I can view a clean and attractive website so that I can have a positive experience       | should have        |
-
+**Epic**|**User Story**|**Label**
+:-----:|:-----:|:-----:
+ |As a Developer, I can deploy the website early so that I can avoid any technical issues or stress later in the project|must have
+Remote Book Swap|As a User, I can create a book post so that I can other users can decide if they would like to swap|must have
+Remote Book Swap|As a User, I can view other book posts so that I can decide which book I would like to swap with|must have
+Remote Book Swap|As a User, I can edit my book post so that I can update my information|must have
+Remote Book Swap|As a User, I can edelete my book post so that I can manage my posts|must have
+Account Management|As a User, I can create an account so that I can access features for authenticated users|must have
+Account Management|As a User, I can reset my password so that I can access my account if I forget my password|could have
+Account Management|As a User, I can update my contact details so that I can allow users to contact me for a swap|could have
+Design & Experience|As a User, I can view a clean and attractive website so that I can have a positive experience|should have
+Design & Experience|As a User, I can receive feedback messages so that I can gain feedback from the actions I have completed|could have
 
 ## Wireframes
 
