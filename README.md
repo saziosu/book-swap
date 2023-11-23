@@ -28,9 +28,11 @@ Link for the finished deployed site: https://book-swap-13f900a2d9c7.herokuapp.co
     - [Login](#login)
     - [Logout](#logout)
     - [Current Books](#current-books)
+    - [Read Book Posts](#read-book-posts)
     - [Add Book](#add-book)
     - [Edit Book](#edit-book)
     - [Delete Book](#delete-book)
+    - [Reserved Book](#reserved-book)
     - [Messaging](#messaging)
     - [Footer](#footer)
   - [Future Features](#future-features)
@@ -105,7 +107,7 @@ Majority of User stories are linked to Epics. Labels are applied for prioritisat
 Remote Book Swap|As a User, I can create a book post so that I can other users can decide if they would like to swap|must have
 Remote Book Swap|As a User, I can view other book posts so that I can decide which book I would like to swap with|must have
 Remote Book Swap|As a User, I can edit my book post so that I can update my information|must have
-Remote Book Swap|As a User, I can edelete my book post so that I can manage my posts|must have
+Remote Book Swap|As a User, I can delete my book post so that I can manage my posts|must have
 Account Management|As a User, I can create an account so that I can access features for authenticated users|must have
 Account Management|As a User, I can reset my password so that I can access my account if I forget my password|could have
 Account Management|As a User, I can update my contact details so that I can allow users to contact me for a swap|could have
@@ -149,50 +151,89 @@ The example Book images were sourced from [Goodreads](https://www.goodreads.com/
 ## Current Features
 
 ### Navbar
-
-FEATURE
 ![navbar image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764481/Screenshot_2023-11-23_at_18.34.37_brfec9.png)
 
-### Hero Section
+The navbar was made with bootstrap.
+The user is shown the user they are logged in as on the right of the navbar.
+The navbar color was chosen based on the color palette selected for this project which is part of the user story [Styling & Layout](https://github.com/saziosu/book-swap/issues/17)
 
-FEATURE
+### Hero Section
 ![hero image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764505/Screenshot_2023-11-23_at_18.34.58_eeprk6.png)
 
-### Info Section
+The Hero image was chosen to match the theme of the website (books).
+The mission statement overlaying the image was also chosen in line with the selected color palette to give a positive experience to the user.
 
+### Info Section
 ![info section](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764523/Screenshot_2023-11-23_at_18.35.18_zvupei.png)
 
-### Sign Up
+The info section on was added to give more context into what the website's function and aims are.
+Logged out users are encouraged to login and post their books. This information is not present for already logged in users so they are not seeing unnecessary information.
 
+### Sign Up
 ![signup](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765390/Screenshot_2023-11-23_at_18.49.44_xuxft2.png)
 
-### Login
+The link for the signup page can only be seen in the navbar for users that are logged out.
+The signup page uses the base template from `django-allauth`.
+Users are required to sign up for an account if they want to post books, or see the contact details of the users that own the books.
+This is a part of the user story [Account Creation](https://github.com/saziosu/book-swap/issues/3)
 
+### Login
 ![login](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765375/Screenshot_2023-11-23_at_18.49.32_tgaaga.png)
 
-### Logout
+The login page link is only viewable by users that are not logged in at the moment.
+Users must be logged in to view the contact details of the users that own the posted books.
+They must also be logged in to add their books that they would like to swap.
+This is also part of the user story [Account Creation](https://github.com/saziosu/book-swap/issues/3)
 
+### Logout
 ![logout](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765361/Screenshot_2023-11-23_at_18.49.15_jskfcw.png)
 
-### Current Books
+The logout page link in the navbar is only seen by users that are already logged in.
+The page asks the user to confirm that they are sure they want to log out of the account.
+If they log out, they are then unable to add books or view the contact details of the book owners'
+This feature is also a part of the user story [Account Creation](https://github.com/saziosu/book-swap/issues/3)
 
-FEATURE
+### Current Books
 ![current books](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764548/Screenshot_2023-11-23_at_18.35.38_vvrrlg.png)
 
-### Add Book
+The currently posted books are viewable on the homepage.
+There is a link to jump to this section of the page in the navbar.
+On larger devices, this shows 4 books per row.
+On smaller medium devices like tablets, this shows 3 books per row.
+On mobile, this gives 1 book per row to ensure its fully viewable.
+It includes the image of the book, the title, author and book's owner with the time posted.
+The user that made the post (if logged in), can see the edit button and edit straight from the homepage.
+This is part of the user story [View Books](https://github.com/saziosu/book-swap/issues/9)
 
-FEATURE
+### Read Book Posts
+![book detail](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700771870/Screenshot_2023-11-23_at_20.37.44_n7igc7.png)
+
+The detailed book post can be viewed by clicking on the card for the book post on the home page.
+This shows more details of the book like it's current condition. Condition was added because someone may not want a book that is only of poor condition, so this helps them make an informed decision.
+The genre is also included on this page, along with the book's blurb.
+The slug for this is generated from the title. If a book with the same name is added, the title is still used but a number is added to the end of the slug to ensure it is unique.
+This is also part of the user story [View Books](https://github.com/saziosu/book-swap/issues/9)
+
+### Add Book
 ![add book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764578/Screenshot_2023-11-23_at_18.36.10_gvqalh.png)
 
-### Edit Book
+The `add-book` can be accessed via the navbar for logged in users.
+There is also a button at the top of the current books section, if this button is clicked and the user is logged out, they are brought to the login page. This encourages the user to log in to continue with this action.
+This is part of the user story [Create Book Post](https://github.com/saziosu/book-swap/issues/6)
 
-FEATURE
+### Edit Book
 ![edit book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764728/Screenshot_2023-11-23_at_18.38.44_b834sy.png)
 
-### Delete Book
+The edit book page is only accessible by the user that made the book. They must be logged in to see this.
+If a user that is logged in, but did not post that book manually enters the url to edit that book in their browser, they will reach an error page and not be allowed to complete that action.
+The edit book page uses the same form as create book, so they are able to see all the previous information in that form so they can easily see what is currently there and edit it accordingly.
+This feature is part of the user story [Edit Book Posts](https://github.com/saziosu/book-swap/issues/8)
 
-FEATURE
+### Delete Book
 ![delete book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764748/Screenshot_2023-11-23_at_18.39.01_efbpfa.png)
+
+### Reserved Book
+![reserved book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700771775/Screenshot_2023-11-23_at_20.36.08_kowb8k.png)
 
 ### Messaging
 
