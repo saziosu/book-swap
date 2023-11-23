@@ -21,10 +21,16 @@ Link for the finished deployed site: https://book-swap-13f900a2d9c7.herokuapp.co
   - [Imagery](#imagery)
 - [Features](#features)
   - [Current Features](#current-features)
-    - [Feature One](#feature-one)
-    - [Feature Two](#feature-two)
-    - [FEATURE THREE](#feature-three)
-    - [FEATURE FOUR](#feature-four)
+    - [Navbar](#navbar)
+    - [Hero Section](#hero-section)
+    - [Sign Up](#sign-up)
+    - [Login](#login)
+    - [Logout](#logout)
+    - [Current Books](#current-books)
+    - [Add Book](#add-book)
+    - [Edit Book](#edit-book)
+    - [Delete Book](#delete-book)
+    - [Messaging](#messaging)
   - [Future Features](#future-features)
   - [Accessibility](#accessibility)
 - [Technology Used](#technology-used)
@@ -142,25 +148,51 @@ The example Book images were sourced from [Goodreads](https://www.goodreads.com/
 
 ## Current Features
 
-### Feature One
+### Navbar
 
-FEATURE ONE
-IMAGE
-
-### Feature Two
-
-FEATURE TWO
-IMAGE
-
-### FEATURE THREE
-
-IMAGE
 FEATURE
+![navbar image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764481/Screenshot_2023-11-23_at_18.34.37_brfec9.png)
 
-### FEATURE FOUR
+### Hero Section
 
-IMAGE
 FEATURE
+![hero image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764505/Screenshot_2023-11-23_at_18.34.58_eeprk6.png)
+
+### Sign Up
+
+![signup](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765390/Screenshot_2023-11-23_at_18.49.44_xuxft2.png)
+
+### Login
+
+![login](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765375/Screenshot_2023-11-23_at_18.49.32_tgaaga.png)
+
+### Logout
+
+![logout](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765361/Screenshot_2023-11-23_at_18.49.15_jskfcw.png)
+
+### Current Books
+
+FEATURE
+![current books](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764548/Screenshot_2023-11-23_at_18.35.38_vvrrlg.png)
+
+### Add Book
+
+FEATURE
+![add book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764578/Screenshot_2023-11-23_at_18.36.10_gvqalh.png)
+
+### Edit Book
+
+FEATURE
+![edit book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764728/Screenshot_2023-11-23_at_18.38.44_b834sy.png)
+
+### Delete Book
+
+FEATURE
+![delete book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764748/Screenshot_2023-11-23_at_18.39.01_efbpfa.png)
+
+### Messaging
+
+![messaging](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765691/Screenshot_2023-11-23_at_18.54.40_q8l9fv.png)
 
 ## Future Features
 
