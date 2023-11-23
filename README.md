@@ -46,6 +46,7 @@ The site's goals are to help connect readers and allow them to posts books they 
 Readers are able to see available books, and see the book's information such as genre and the book's condition to help them decide if they want to contact the book's owner and organise a swap.
 This connects readers and is also a sustainable way of reading.
 > Each year consumers waste more than 16,000 truckloads of books which have not been read once. [source](https://wordsrated.com/impact-of-book-publishing-on-environment/)
+
 BookSwap has the potential to help make a positive impact on our environment by preventing wastage of unwanted books.
 
 # Agile Methodology
@@ -243,6 +244,8 @@ Heroku was used to deploy this site:
   * Djang-allauth
   * Cloudinary Fields
   * Setting up django files (settings, admin etc)
+* [Code Institute](https://github.com/ckz8780/ci-fsf-hello-django/) - I used this hello-django project for help with setting boolean field
+* [Django Documentation](https://docs.djangoproject.com/en/4.2/ref/models/fields/#choices) - I used this resource to help set up the choice field in my model in models.py
 * [Corey Schafer](https://www.youtube.com/watch?v=-s7e_Fy6NRU) - I used this resource to help set up the views for:
   * Creating posts
   * Editing posts
@@ -252,6 +255,7 @@ Heroku was used to deploy this site:
 * [CrispyForms Documentation](https://django-crispy-forms.readthedocs.io/en/latest/layouts.html) - I used this to help set up the crispforms helper, to help the submit button
 * [StackOverflow](https://stackoverflow.com/questions/24822509/success-message-in-deleteview-not-shown) - used this resource to help set up the messages on the deleteview
 * [StackOverflow](https://stackoverflow.com/questions/24914637/show-a-successful-message-with-class-based-views) - I used this resource to help set up the messages on the other generic class based views
+* [StackOverflow](https://stackoverflow.com/questions/28723266/django-display-message-after-post-form-submit) - I also used this resource to help set up messages on update and create views
 * [StackOverflow](https://stackoverflow.com/questions/75495403/django-returns-templatedoesnotexist-when-using-crispy-forms) - I used this resource to help with an error with crispyforms package
 * [Django Documentation](https://docs.djangoproject.com/en/4.2/ref/models/instances/#django.db.models.Model.get_FOO_display) - I used this resource to help resolve an issue with showing the model's choice data on the front end
 * [AutoSlug](https://django-autoslug.readthedocs.io/en/latest/) - I used this resource to help set up unique slugs from the book title
