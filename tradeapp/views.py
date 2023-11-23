@@ -82,6 +82,8 @@ class BookUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     def form_valid(self, form):
         """
         Method to set the user that edited to the post_owner (post author)
+        message set to update the user when the book has been posted
+        https://stackoverflow.com/questions/28723266/django-display-message-after-post-form-submit
         """
         messages.success(self.request, 'Successfully updated your Book!')
         form.instance.post_owner = self.request.user
