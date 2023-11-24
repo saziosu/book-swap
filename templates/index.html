@@ -48,10 +48,10 @@
                                     {% if "placeholder" in book.book_image.url %}
                                     <img class="img-thumbnail"
                                         src="https://res.cloudinary.com/dygj0wxf0/image/upload/v1700072067/placeholder-image_hjgthw.jpg"
-                                        alt="Book Placeholder Image" style="width: 100%; height: 100%;" />
+                                        alt="Book Placeholder Image" style="width: 100%; height: 100%;">
                                     {% else %}
                                     <img class="card-img-top img-thumbnail" src=" {{ book.book_image.url }}"
-                                        alt="Image for {{ book.title }}" style="width: 100%; height: 100%;" />
+                                        alt="Image for {{ book.title }}" style="width: 100%; height: 100%;">
                                     {% endif %}
                                 </div>
                                 <h2 class="card-title">{{ book.title }}</h2>

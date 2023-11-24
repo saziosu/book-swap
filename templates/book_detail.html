@@ -11,9 +11,9 @@
                 {% if "placeholder" in book.book_image.url %}
                 <img class="book-image"
                     src="https://res.cloudinary.com/dygj0wxf0/image/upload/v1700072067/placeholder-image_hjgthw.jpg"
-                    alt="Book Placeholder Image" />
+                    alt="Book Placeholder Image">
                 {% else %}
-                <img class="book-image" src="{{ book.book_image.url }}" alt="Image for {{ book.title }}" />
+                <img class="book-image" src="{{ book.book_image.url }}" alt="Image for {{ book.title }}">
                 {% endif %}
             </div>
         </div>
