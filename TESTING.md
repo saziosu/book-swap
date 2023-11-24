@@ -71,8 +71,22 @@ The performance is not as high as it ideally should be. This is mainly due to th
 ![book detail lighthouse](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700857152/Screenshot_2023-11-24_at_20.19.06_tnutrl.png)
 
 **Add Book**
+![add book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858146/Screenshot_2023-11-24_at_20.35.41_jrrlsc.png)
 
+**Edit Book**
+![edit book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858257/Screenshot_2023-11-24_at_20.37.31_dakflb.png)
 
+**Delete Book**
+![delete book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858377/Screenshot_2023-11-24_at_20.39.31_ozrnvi.png)
+
+**Login**
+![login page](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858725/Screenshot_2023-11-24_at_20.45.18_tqloes.png)
+
+**Logout**
+![Logout](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858377/Screenshot_2023-11-24_at_20.39.31_ozrnvi.png)
+
+**Sign up**
+![signup page](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858725/Screenshot_2023-11-24_at_20.45.18_tqloes.png)
 
 # Manual Testing
 
@@ -95,8 +109,8 @@ MANUAL TESTING DETAILS
 
 ## Known Bugs
 
-KNOWN BUGS TABLE
+To my knowledge there are no further known bugs on this project
 
 ## Fixed bugs
 
-FIXED BUGS TABLE
+All resolved bugs are listed on the [kanban board for the project](https://github.com/users/saziosu/projects/4)
