@@ -232,6 +232,7 @@ This feature is part of the user story [Edit Book Posts](https://github.com/sazi
 
 ### Delete Book
 ![delete book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764748/Screenshot_2023-11-23_at_18.39.01_efbpfa.png)
+
 The delete page is only accessible by the user that made the book, they must be logged in to see the delete button.
 If a user tried to reach the delete page for a book that they did not create they will get an error page and now be allowed to complete that action.
 This feature is part of the user story [Delete Book Posts](https://github.com/saziosu/book-swap/issues/13)
@@ -280,6 +281,7 @@ It includes links to Twitter, Facebook, Instagram and YouTube. These open in new
 * BootStrap
 * Django
 * AutoSlug
+* [ElephantSQL](https://www.elephantsql.com/) + PostgreSQL
 * Cloudinary & dj3-cloudinary-storage
 * CrispyForms & crispy-bootstrap4
 * django-allauth
