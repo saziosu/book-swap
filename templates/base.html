@@ -40,23 +40,23 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-label="Navbar home link" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link active" aria-label="site logo link" href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" aria-label="Navbar logout link" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link" aria-label="link to logout" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-label="Navbar add book link" href="{% url 'book_create' %}">Add Your
+                        <a class="nav-link" aria-label="link to add a book" href="{% url 'book_create' %}">Add Your
                             Book</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" aria-label="Navbar signup link" href="{% url 'account_signup' %}">Sign
+                        <a class="nav-link" aria-label="link to signup" href="{% url 'account_signup' %}">Sign
                             Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-label="Navbar login link" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link" aria-label="link to login" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
                     <li class="nav-item">
