@@ -22,7 +22,7 @@
             <br>
             {% if user.is_anonymous %}
             <!-- link to the sign up page, to encourage users to join -->
-            <a class="btn btn-sm info-signin" href="{% url 'account_login' %}" aria-labelledby="Sign In link">Sign
+            <a class="btn btn-sm info-signin" href="{% url 'account_login' %}" aria-label="Sign In link">Sign
                 In</a> today to post your books and contact users you'd like to swap with!
             {% endif %}
         </p>
@@ -31,7 +31,7 @@
 <!-- section for the book posts -->
 <section class="container-fluid" id="books">
     <div class="link-container">
-        <a href="{% url 'book_create' %}" id="add-book" aria-labelledby="Add Book link">Add Your Book</a>
+        <a href="{% url 'book_create' %}" id="add-book" aria-label="Add Book link">Add Your Book</a>
     </div>
     <div class="row">
         <!-- Blog Entries Column -->
@@ -65,9 +65,9 @@
                                 {% if book.post_owner == request.user %}
                                 <div class="ud-container">
                                     <a href="{% url 'book_update' slug=book.slug %}" class="btn btn edit-button"
-                                        aria-labelledby="Edit button">Edit</a>
+                                        aria-label="Edit button">Edit</a>
                                     <a href="{% url 'book_delete' slug=book.slug %}" class="btn btn-danger"
-                                        aria-labelledby="Delete Button">Delete</a>
+                                        aria-label="Delete Button">Delete</a>
                                 </div>
                                 {% endif %}
                             </div>
