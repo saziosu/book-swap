@@ -9,7 +9,6 @@ body {
     background-color: #FBE7C6;
 }
 
-
 h1,
 h2,
 h3,
@@ -122,9 +121,6 @@ h6 {
     color: rgb(9, 21, 2);
     text-decoration: none;
 }
-
-/* footer positioning */
-
 
 /* footer text styling */
 #footer-text {
