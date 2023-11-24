@@ -158,7 +158,7 @@ The user is shown the user they are logged in as on the right of the navbar.
 The navbar color was chosen based on the color palette selected for this project which is part of the user story [Styling & Layout](https://github.com/saziosu/book-swap/issues/17)
 
 ### Hero Section
-![hero image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764505/Screenshot_2023-11-23_at_18.34.58_eeprk6.png)
+![hero image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700860854/Screenshot_2023-11-24_at_21.20.48_rp6dj6.png)
 
 The Hero image was chosen to match the theme of the website (books).
 The mission statement overlaying the image was also chosen in line with the selected color palette to give a positive experience to the user.
