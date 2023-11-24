@@ -29,7 +29,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" aria-label="Navbar logo link" href="{% url 'home' %}">
+            <a class="navbar-brand" aria-label="logo links to homepage" href="{% url 'home' %}">
                 <img src="https://res.cloudinary.com/dygj0wxf0/image/upload/v1700157064/bookswap-logo_pf8cnn.png"
                     alt="book swap logo" width="50" height="50" class="d-inline-block">
                 BookSwap</a>
@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-label="site logo link" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link active" aria-label="link to homepage" href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
