@@ -9,10 +9,9 @@
   <h1>Your Book's Details</h1>
   <div class="row">
     {% if user.is_authenticated %}
-    <form method="post" enctype="multipart/form-data">
       <!-- add csrf token and crispy forms -->
       {% csrf_token %} {% crispy form %}
-    </form>
+
     {% endif %}
   </div>
 </div>
