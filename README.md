@@ -219,6 +219,7 @@ This is also part of the user story [View Books](https://github.com/saziosu/book
 
 The `add-book` can be accessed via the navbar for logged in users.
 There is also a button at the top of the current books section, if this button is clicked and the user is logged out, they are brought to the login page. This encourages the user to log in to continue with this action.
+The phone number field is set up to default to Irish numbers, but international dialling codes can also be used.
 This is part of the user story [Create Book Post](https://github.com/saziosu/book-swap/issues/6)
 
 ### Edit Book
@@ -231,17 +232,26 @@ This feature is part of the user story [Edit Book Posts](https://github.com/sazi
 
 ### Delete Book
 ![delete book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700764748/Screenshot_2023-11-23_at_18.39.01_efbpfa.png)
+The delete page is only accessible by the user that made the book, they must be logged in to see the delete button.
+If a user tried to reach the delete page for a book that they did not create they will get an error page and now be allowed to complete that action.
+This feature is part of the user story [Delete Book Posts](https://github.com/saziosu/book-swap/issues/13)
 
 ### Reserved Book
 ![reserved book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700771775/Screenshot_2023-11-23_at_20.36.08_kowb8k.png)
+This is a boolean field in the database, it allows the user to confirm that the book has been reserved. A reserved book is pending a swap, so if the swap does not go ahead the user can edit it again and confirm that this book is available again.
+If the book has been marked as reserved, all users cannot see the book owner's contact details.
+This stops the owner from getting unnecessary contacts when their book is not available.
 
 ### Messaging
-
 ![messaging](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765691/Screenshot_2023-11-23_at_18.54.40_q8l9fv.png)
+Messaging is added for actions like posting books, editing books, deleting books, logging in and logging out.
+This gives feedback to the user to give them feedback and show they have successfully completed their chosen action.T
+This feature is part of the user story [Toast messages](https://github.com/saziosu/book-swap/issues/15)
 
 ### Footer
-
 ![footer](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700765412/Screenshot_2023-11-23_at_18.50.06_a8io79.png)
+The footer is at the bottom of the page, Bootstrap flex was used to keep the footer at the bottom of all pages.
+It includes links to Twitter, Facebook, Instagram and YouTube. These open in new tabs and include descriptive labels for accessibility.
 
 ## Future Features
 
