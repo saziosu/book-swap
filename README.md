@@ -103,7 +103,7 @@ Majority of User stories are linked to Epics. Labels are applied for prioritisat
 
 **Epic**|**User Story**|**Label**
 :-----:|:-----:|:-----:
- |As a Developer, I can deploy the website early so that I can avoid any technical issues or stress later in the project|must have
+| - |As a Developer, I can deploy the website early so that I can avoid any technical issues or stress later in the project|must have
 Remote Book Swap|As a User, I can create a book post so that I can other users can decide if they would like to swap|must have
 Remote Book Swap|As a User, I can view other book posts so that I can decide which book I would like to swap with|must have
 Remote Book Swap|As a User, I can edit my book post so that I can update my information|must have
@@ -340,6 +340,7 @@ Heroku was used to deploy this site:
 * [Code Institute](https://github.com/ckz8780/ci-fsf-hello-django/) - I used this hello-django project for help with setting boolean field
 * [Django Documentation](https://docs.djangoproject.com/en/4.2/ref/models/fields/#choices) - I used this resource to help set up the choice field in my model in models.py
 * [Django Documentation](https://docs.djangoproject.com/en/4.2/ref/views/#error-views) -  I used this to help understand the error pages for django
+* [Django Documentation](https://docs.djangoproject.com/en/4.2/ref/models/instances/#extra-instance-methods) -  I used this to help load the correct data on my book detail page via the `get_FOO_display` method.
 * [Corey Schafer](https://www.youtube.com/watch?v=-s7e_Fy6NRU) - I used this resource to help set up the views for:
   * Creating posts
   * Editing posts
@@ -351,8 +352,11 @@ Heroku was used to deploy this site:
 * [StackOverflow](https://stackoverflow.com/questions/24914637/show-a-successful-message-with-class-based-views) - I used this resource to help set up the messages on the other generic class based views
 * [StackOverflow](https://stackoverflow.com/questions/28723266/django-display-message-after-post-form-submit) - I also used this resource to help set up messages on update and create views
 * [StackOverflow](https://stackoverflow.com/questions/75495403/django-returns-templatedoesnotexist-when-using-crispy-forms) - I used this resource to help with an error with crispyforms package
+* [Whitenoise](https://whitenoise.readthedocs.io/en/latest/index.html) - I used this resource to help me set up whitenoise to help with css issues after deploying to heroku.
 * [Django Documentation](https://docs.djangoproject.com/en/4.2/ref/models/instances/#django.db.models.Model.get_FOO_display) - I used this resource to help resolve an issue with showing the model's choice data on the front end
 * [AutoSlug](https://django-autoslug.readthedocs.io/en/latest/) - I used this resource to help set up unique slugs from the book title
+* [Cloudinary](https://cloudinary.com/documentation/django_image_and_video_upload) - I used this documentation to help me allow users to upload images from the create/edit form to Cloudinary
+* [StackOverflow](https://stackoverflow.com/questions/25940811/how-to-add-anchor-to-django-url-in-template) -  I used this resource to help me set up the anchor link within base.html
 
 
 ## Media
