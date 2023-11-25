@@ -143,8 +143,8 @@ h6 {
     border-radius: 5%;
 }
 
-/* media query to improve responsivity on screens 600px and below */ 
-@media screen and (max-width: 600px) {
+/* media query to improve responsivity on screens 850px and below */ 
+@media screen and (max-width: 850px) {
     #info-container {
         display: flex;
         flex-direction: column;
