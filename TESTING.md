@@ -55,6 +55,7 @@ Most of the pages are utilising Bootstrap for styling, however the custom css fr
 [JShint](https://jshint.com/) was used to validate the JavaScript on the site.
 The project only has a small amount of JS in the footer for helping to time out the toast messages on the front end.
 There was one error about bootstrap not being a defined variable. This is fine however, as that is not seen in the validator.
+![jshint screenshot](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700853357/Screenshot_2023-11-24_at_19.15.36_fhl7jz.png)
 
 ### Python Validator
 
