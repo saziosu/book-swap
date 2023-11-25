@@ -339,6 +339,7 @@ Heroku was used to deploy this site:
   * Djang-allauth
   * Cloudinary Fields
   * Setting up django files (settings, admin etc)
+  * Bootstrap
 * [Code Institute](https://github.com/ckz8780/ci-fsf-hello-django/) - I used this hello-django project for help with setting boolean field
 * [Django Documentation](https://docs.djangoproject.com/en/4.2/ref/models/fields/#choices) - I used this resource to help set up the choice field in my model in models.py
 * [Django Documentation](https://docs.djangoproject.com/en/4.2/ref/views/#error-views) -  I used this to help understand the error pages for django
@@ -359,6 +360,7 @@ Heroku was used to deploy this site:
 * [AutoSlug](https://django-autoslug.readthedocs.io/en/latest/) - I used this resource to help set up unique slugs from the book title
 * [Cloudinary](https://cloudinary.com/documentation/django_image_and_video_upload) - I used this documentation to help me allow users to upload images from the create/edit form to Cloudinary
 * [StackOverflow](https://stackoverflow.com/questions/25940811/how-to-add-anchor-to-django-url-in-template) -  I used this resource to help me set up the anchor link within base.html
+* [Bootstrap Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - I used this quite often through the project with helping to correctly use bootstrap for layouts, such as the footer and changing the navbar.
 
 
 ## Media
