@@ -1,7 +1,7 @@
 # BookSwap
 BookSwap is a project to connect readers through swapping books.
 
-![Am I responsive image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700683184/amiresponsive_vzoufb.png)
+![Am I responsive image](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700931370/Screenshot_2023-11-25_at_16.56.03_vl6jl2.png)
 
 Link for the finished deployed site: https://book-swap-13f900a2d9c7.herokuapp.com/
 
