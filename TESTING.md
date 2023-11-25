@@ -135,6 +135,8 @@ Delete Book|Cancelling the deletion should bring the user back to the previous p
 Reserved Book|The reserved book should display that it is reserved on the homepage/current books section|Pass
 Reserved Book|The reserved book should hide the user's contact details on the Book detail page|Pass
 Messaging|Messages should be seen at the top of the page for adding, editing, deleting, logging in and logging out|Pass
+Messaging|Messages should be dismissable|Pass
+Messaging|Messages should time out after 3 seconds|Pass
 Footer|All links to external websites should open in new tabs|Pass
 
 # Bugs
