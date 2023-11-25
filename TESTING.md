@@ -64,30 +64,18 @@ All python files passed the validation without issue, with the exception of sett
 
 ### Lighthouse Report
 
-**Homepage**
-![homepage lighthouse](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700856068/Screenshot_2023-11-24_at_20.00.41_zne78a.png)
-The performance is not as high as it ideally should be. This is mainly due to the images that are uploaded, and the cache policy within Cloudinary. Unfortuantely there was not much more I could do to resolve this.
+The performance on the homepage is not as high as it ideally should be. This is mainly due to the images that are uploaded, and the cache policy within Cloudinary. Unfortuantely there was not much more I could do to resolve this.
 
-**Book Detail**
-![book detail lighthouse](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700857152/Screenshot_2023-11-24_at_20.19.06_tnutrl.png)
-
-**Add Book**
-![add book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858146/Screenshot_2023-11-24_at_20.35.41_jrrlsc.png)
-
-**Edit Book**
-![edit book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858257/Screenshot_2023-11-24_at_20.37.31_dakflb.png)
-
-**Delete Book**
-![delete book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858377/Screenshot_2023-11-24_at_20.39.31_ozrnvi.png)
-
-**Login**
-![login page](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858725/Screenshot_2023-11-24_at_20.45.18_tqloes.png)
-
-**Logout**
-![Logout](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858377/Screenshot_2023-11-24_at_20.39.31_ozrnvi.png)
-
-**Sign up**
-![signup page](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858725/Screenshot_2023-11-24_at_20.45.18_tqloes.png)
+**Page**|**Image**
+:-----:|:-----:
+Homepage|![homepage lighthouse](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700856068/Screenshot\_2023-11-24\_at\_20.00.41\_zne78a.png)
+Book Detail|![book detail lighthouse](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700857152/Screenshot\_2023-11-24\_at\_20.19.06\_tnutrl.png)
+Add Book|![add book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858146/Screenshot\_2023-11-24\_at\_20.35.41\_jrrlsc.png)
+Edit Book|![edit book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858257/Screenshot\_2023-11-24\_at\_20.37.31\_dakflb.png)
+Delete Book|![delete book](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858377/Screenshot\_2023-11-24\_at\_20.39.31\_ozrnvi.png)
+Login|![login page](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858725/Screenshot\_2023-11-24\_at\_20.45.18\_tqloes.png)
+Logout|![Logout](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858377/Screenshot\_2023-11-24\_at\_20.39.31\_ozrnvi.png)
+Sign up|![signup page](https://res.cloudinary.com/dygj0wxf0/image/upload/v1700858725/Screenshot\_2023-11-24\_at\_20.45.18\_tqloes.png)
 
 # Manual Testing
 
